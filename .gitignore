@@ -7,6 +7,6 @@
 *.pdf
 *.synctex.gz
 *.log
-\out
-\auxil
-\.idea
+out/
+auxil/
+.idea/
