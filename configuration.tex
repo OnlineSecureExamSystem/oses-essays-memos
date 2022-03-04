@@ -1,0 +1,35 @@
+
+\documentclass[a4paper,12p]{thesis}
+
+% used to specify page dimentions
+\usepackage[includeheadfoot,margin=2.5cm]{geometry}
+
+% used to modify the header and the footer
+\usepackage{fancyhdr}
+\pagestyle{plain}
+
+% used to change font (for this to work you need to change your engine to xelatex or luatex)
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+
+% used to change paragraph spacing and line spacing
+\usepackage{setspace}
+\centering
+\setlength{\parskip}{6pt}
+\renewcommand{\baselinestretch}{1.5}
+
+% used to set default section and subsection font sizes and spacing and style
+\usepackage{titlesec}
+\usepackage[document]{ragged2e}
+\usepackage{color}
+\titleformat*{\section}{\fontsize{14pt}{12pt}\bfseries}
+\titleformat*{\subsection}{\fontsize{12pt}{6pt}\bfseries}
+\titlespacing*{\section}{12pt}{12pt}{12pt}
+\titlespacing*{\subsection}{6pt}{6pt}{6pt}
+
+
+
+\begin{document}
+% write content here
+% % you will get a compilation error if this section is empty
+\end{document}
