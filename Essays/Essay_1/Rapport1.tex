@@ -40,6 +40,7 @@
 
 % for images
 \usepackage{graphicx}
+\userpackage{float}
 \graphicspath{{images/}}
 \usepackage[figurename=Figure]{caption}
 \renewcommand{\figurename}{Figure}
@@ -316,15 +317,14 @@
      \subsubsection{Modify his own profile}
 
      \section{Diagrame global }
-
      \begin{figure}[h]
          \centering
-         \includegraphics[width=\textwidth]{SCD}
-         \caption{admin use case diagram}
+         \includegraphics[width=200pt]{SCD}
+         \caption{static global diagram}
      \end{figure}
-
+     \clearpage
      \section{DCU de chaque acteur}
-
+     \vspace{5cm} %5mm vertical space
      % when using images you just have to include the name of the image without the extension
 
     \begin{figure}[h]
@@ -333,28 +333,29 @@
         \caption{admin use case diagram}
     \end{figure}
 
+     \begin{figure}[h]
+         \centering
+         \includegraphics[width=\textwidth]{proctor_UCD}
+         \caption{proctor use case diagram}
+     \end{figure}
+
     \begin{figure}[h]
         \centering
-        \includegraphics[width=\textwidth]{Module_Teacher}
+        \includegraphics[width=450pt]{Module_Teacher}
         \caption{module teacher use case diagram}
     \end{figure}
 
     \begin{figure}[h]
         \centering
-        \includegraphics[width=\textwidth]{TP TD_Teacher}
+        \includegraphics[width=\textwidth]{TP_TD_Teacher}
         \caption{Td/Tp teacher use case diagram}
     \end{figure}
 
     \begin{figure}[h]
         \centering
-        \includegraphics[width=\textwidth]{student_UCD}
+        \includegraphics[width=350pt]{student_UCD}
         \caption{student use case diagram}
     \end{figure}
 
-    \begin{figure}[h]
-        \centering
-        \includegraphics[width=\textwidth]{proctor_UCD}
-        \caption{proctor use case diagram}
-    \end{figure}
 
 \end{document}
