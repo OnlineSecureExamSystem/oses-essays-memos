@@ -7,6 +7,7 @@
 *.pdf
 *.synctex.gz
 *.log
+*.xdv
 out/
 auxil/
 .idea/
