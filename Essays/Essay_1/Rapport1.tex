@@ -44,6 +44,7 @@
 \usepackage[figurename=Figure]{caption}
 \renewcommand{\figurename}{Figure}
 
+
 \begin{document}
     % write content here
     % you will get a compilation error if this section is empty
@@ -51,13 +52,12 @@
     % add title
 
     % add authors
-     \begin{center}
-        \textbf{Raid Nasrellah TEYAR} \\
-        \textbf{Oussama SALAHOUELHADJ} \\
-        \textbf{Mohammed Elhadi SAOUDI} \\
-    \end{center}
 
-     \raggedright\section{Les besion fonctionnelle}
+
+    \tableofcontents
+    \newpage
+
+     \raggedright\section{functionnal requirement}
 
     
      \subsection{Actor: Teacher responsible of the module}
@@ -323,47 +323,55 @@
      \item Modify his own profile.
     \end{itemize}
 
+    \clearpage
 
-
-
-
-     \section{Diagrame global }
+     \section{Static context diagram}
      \vspace{5cm}
      \begin{figure}[h]
+
          \centering
          \includegraphics[width=200pt]{SCD}
-         \caption{static global diagram}
+         \caption{Static context diagram}
      \end{figure}
-     \clearpage
-     \section{DCU de chaque acteur}
-     \vspace{5cm} %5mm vertical space
+
+
+     \section{Use case diagram for each actor}
+     %5mm vertical space
      % when using images you just have to include the name of the image without the extension
 
-    \begin{figure}[h]
+
+    \begin{figure}
+        \subsection{Admin use case diagram}
         \centering
         \includegraphics[width=\textwidth]{admin_UCD}
         \caption{admin use case diagram}
     \end{figure}
+     \clearpage
 
-     \begin{figure}[h]
+     \begin{figure}
+         \subsection{Proctor use case diagram}
          \centering
          \includegraphics[width=\textwidth]{proctor_UCD}
          \caption{proctor use case diagram}
      \end{figure}
 
-    \begin{figure}[h]
+
+    \begin{figure}
+        \subsection{Proctor use case diagram}
         \centering
         \includegraphics[width=450pt]{Module_Teacher}
-        \caption{module teacher use case diagram}
+        \caption{teacher responsable use case diagram}
     \end{figure}
 
-    \begin{figure}[h]
+    \begin{figure}
+        \subsection{Td/Tp teacher use case diagram}
         \centering
         \includegraphics[width=\textwidth]{TP_TD_Teacher}
         \caption{Td/Tp teacher use case diagram}
     \end{figure}
 
-    \begin{figure}[h]
+    \begin{figure}
+        \subsection{Student use case diagram}
         \centering
         \includegraphics[width=350pt]{student_UCD}
         \caption{student use case diagram}
