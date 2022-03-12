@@ -1,0 +1,62 @@
+\contentsline {chapter}{\numberline {1}Analysis}{6}{}%
+\contentsline {section}{\numberline {1.1}Introduction}{7}{}%
+\contentsline {paragraph}{}{7}{}%
+\contentsline {paragraph}{}{7}{}%
+\contentsline {section}{\numberline {1.2}Specifications (Cahier Des Charges)}{7}{}%
+\contentsline {subsection}{\numberline {1.2.1}Project context}{7}{}%
+\contentsline {paragraph}{}{7}{}%
+\contentsline {paragraph}{}{7}{}%
+\contentsline {subsection}{\numberline {1.2.2}Problematic and project limitations}{7}{}%
+\contentsline {subsubsection}{Problematic}{7}{}%
+\contentsline {subsubsection}{project limitations}{8}{}%
+\contentsline {subsection}{\numberline {1.2.3}Project objective}{8}{}%
+\contentsline {section}{\numberline {1.3}Identification of actors}{8}{}%
+\contentsline {subsection}{\numberline {1.3.1}Admin}{8}{}%
+\contentsline {paragraph}{}{8}{}%
+\contentsline {subsection}{\numberline {1.3.2}Head Teacher}{8}{}%
+\contentsline {paragraph}{}{8}{}%
+\contentsline {subsection}{\numberline {1.3.3}Teacher TD/TP}{9}{}%
+\contentsline {paragraph}{}{9}{}%
+\contentsline {subsection}{\numberline {1.3.4}Student}{9}{}%
+\contentsline {paragraph}{}{9}{}%
+\contentsline {subsection}{\numberline {1.3.5}Proctor}{9}{}%
+\contentsline {paragraph}{}{9}{}%
+\contentsline {section}{\numberline {1.4}Non Functional Requirements}{9}{}%
+\contentsline {subsection}{\numberline {1.4.1}Admin}{9}{}%
+\contentsline {subsection}{\numberline {1.4.2}Head Teacher}{10}{}%
+\contentsline {subsection}{\numberline {1.4.3}Teacher TD/TP}{10}{}%
+\contentsline {subsection}{\numberline {1.4.4}Student}{10}{}%
+\contentsline {subsection}{\numberline {1.4.5}Proctor}{11}{}%
+\contentsline {subsection}{\numberline {1.4.6}System}{11}{}%
+\contentsline {subsubsection}{Security}{11}{}%
+\contentsline {subsubsection}{Performance}{12}{}%
+\contentsline {subsubsection}{Robustness and Reliability}{12}{}%
+\contentsline {subsubsection}{Data integrity}{12}{}%
+\contentsline {subsubsection}{Portability}{13}{}%
+\contentsline {subsubsection}{Privacy and Confidentiality}{13}{}%
+\contentsline {section}{\numberline {1.5}Use-case diagrams}{13}{}%
+\contentsline {subsection}{\numberline {1.5.1}Global use-case diagram}{13}{}%
+\contentsline {section}{\numberline {1.6}Specifications for 5 Use-cases}{15}{}%
+\contentsline {subsection}{\numberline {1.6.1}Use Case: Login}{15}{}%
+\contentsline {subsubsection}{Descriptive sheet}{15}{}%
+\contentsline {subsubsection}{system sequence diagram}{17}{}%
+\contentsline {subsubsection}{prototypes}{18}{}%
+\contentsline {subsection}{\numberline {1.6.2}Use Case: Create an exam session}{19}{}%
+\contentsline {subsubsection}{Descriptive sheet}{19}{}%
+\contentsline {subsubsection}{system sequence diagram}{21}{}%
+\contentsline {subsubsection}{prototypes}{22}{}%
+\contentsline {subsection}{\numberline {1.6.3}Use Case: Create an exam}{23}{}%
+\contentsline {subsubsection}{Descriptive sheet}{23}{}%
+\contentsline {subsubsection}{system sequence diagram}{24}{}%
+\contentsline {subsubsection}{prototypes}{25}{}%
+\contentsline {subsection}{\numberline {1.6.4}Use Case: Pass an exam}{26}{}%
+\contentsline {subsubsection}{Descriptive sheet}{26}{}%
+\contentsline {subsubsection}{system sequence diagram}{28}{}%
+\contentsline {subsubsection}{prototypes}{30}{}%
+\contentsline {subsection}{\numberline {1.6.5}Use Case: End exam session for a student}{32}{}%
+\contentsline {subsubsection}{Descriptive sheet}{32}{}%
+\contentsline {subsubsection}{system sequence diagram}{34}{}%
+\contentsline {subsubsection}{prototypes}{36}{}%
+\contentsline {section}{\numberline {1.7}Conclusion}{37}{}%
+\contentsline {paragraph}{}{37}{}%
+\contentsline {paragraph}{}{37}{}%
