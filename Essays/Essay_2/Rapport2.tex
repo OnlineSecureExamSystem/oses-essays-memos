@@ -197,11 +197,12 @@
 	\end{figure}
 \clearpage
 
-\raggedright\section{Specifications for 5 Use-cases}
 
-\raggedright\subsection{Use Case: Login}
-\subsubsection{Descriptive sheet}
 \begin{table}[h]
+	\raggedright\section{Specifications for 5 Use-cases}
+
+	\raggedright\subsection{Use Case: Login}
+	\subsubsection{Descriptive sheet}
 	\centering
 	\begin{tabularx}{\textwidth}{|l|X|}
 		\hline
@@ -210,7 +211,7 @@
 		Actors                & admin, head teacher, teacher td/tp, student, proctor                                                                                                                 \\ \hline
 		Objective             & Authenticate the user who tries to access to the platform                                                                                                            \\ \hline
 		Preconditions         &                                                                                                                                                                      \\ \hline
-		nominal scenario      &                                                                                                                                                                      \\
+		nominal scenario
 		                      & 1) The user enter his email and password.                                                                                                                            \\
 		                      & 2) The system verifies the information.                                                                                                                              \\
 		                      & 3) The System asks user where he wants to receive his verification code.                                                                                             \\
@@ -219,26 +220,24 @@
 		                      & 6) the System asks the user to enter his verification code.                                                                                                          \\
 		                      & 7) the user enters the code and clicks on "Confirm".                                                                                                                 \\
 		                      & 8) the system shows a success message.                                                                                                                               \\ \hline
-		Alternative scenarios &                                                                                                                                                                      \\
+		Alternative scenarios
 		                      & A1 : User chooses verification by SMS,  Sequence can start after the point 3 of the nominal scenario.                                                                \\
 		                      & \hspace{4mm}3.1) The user chooses verification by SMS.                                                                                                               \\
 		                      & \hspace{4mm}3.2) the System sends a verification code to the user's phone number.                                                                                    \\
 		                      & \hspace{4mm}3.3) the System asks the user to enter his verification code.                                                                                            \\
 		                      & \hspace{4mm}3.4) the user enters the code and clicks on "Confirm".                                                                                                   \\
 		                      & \hspace{4mm}3.5) the system shows a success message and redirects the user to the home page.                                                                         \\ \hline
-		Exception scenarios   &                                                                                                                                                                      \\
+		Exception scenarios
 		                      & E1 : User enters a wrong email or password: Sequence can start after the point 2 of the nominal scenario.                                                            \\
 		                      & \hspace{4mm}2.1) The system shows an error message "wrong email or password".                                                                                        \\
 		                      & \hspace{4mm}2.2) The nominal scenario                                                                                                                                \\
-		                      &                                                                                                                                                                      \\
 		                      & E2 : User enters a expired or invalid verification code: Sequence can start after the point 7 of the nominal scenario.                                               \\
 		                      & \hspace{4mm}7.1) The system shows an error message "The verification code is expired or invalid".                                                                    \\
 		                      & \hspace{4mm}7.2) The nominal scenario                                                                                                                                \\
-		                      &                                                                                                                                                                      \\
 		                      & E3 : User enters a wrong password 5 times: Sequence can start after the point 2 of the nominal scenario.                                                             \\
 		                      & \hspace{4mm}7.4) The system shows an error message "you entered too many wrong passwords in a short time, please try again later or try clicking (forgot password)". \\
 		                      & \hspace{4mm}7.2) The nominal scenario                                                                                                                                \\ \hline
-		Post conditions       &                                                                                                                                                                      \\
+		Post conditions
 		                      & The user is authenticated and redirected to the Home page                                                                                                            \\ \hline
 	\end{tabularx}
 	\caption{Descriptive sheet for the use case: login.}
@@ -250,7 +249,7 @@
      \begin{figure}[h]
 	
 	\centering
-	\includegraphics[width=\textwidth]{images/Login_dss}
+	\includegraphics[width=260pt]{images/Login_dss}
 	
 	\caption{system sequence diagram for the use case: login.}
 \end{figure}
@@ -266,9 +265,10 @@
 \end{figure}
 \clearpage
 
-\raggedright\subsection{Use Case: Create an exam session}
-\subsubsection{Descriptive sheet}
-\begin{table}[h]
+
+\begin{table}[t]
+	\raggedright\subsection{Use Case: Create an exam session}
+	\subsubsection{Descriptive sheet}
 	\centering
 	\begin{tabularx}{\textwidth}{|l|X|}
 		\hline
@@ -387,9 +387,10 @@
 
 
 
-\raggedright\subsection{Use Case: Pass an exam}
-\subsubsection{Descriptive sheet}
+
 \begin{table}[h]
+	\raggedright\subsection{Use Case: Pass an exam}
+	\subsubsection{Descriptive sheet}
 	\centering
 	\begin{tabularx}{\textwidth}{|l|X|}
 		\hline
@@ -401,7 +402,7 @@
 		                      & - student is logged in.                                                                           \\
 		                      & - proctor started the session.                                                                    \\
 		                      & - enter to exam enabled.                                                                          \\ \hline
-		nominal scenario      &                                                                                                   \\
+		nominal scenario
 		                      & 1) The student clicks the "pass exam" button.                                                     \\
 		                      & 2) The system evokes a page with instructions to install the desktop app, to do the exam.         \\
 		                      & 3) The student install the app.                                                                   \\
@@ -418,43 +419,47 @@
 		                      & 14) The student answers the questions.                                                            \\
 		                      & 15) The user click finish and submit the exam.                                                    \\
 		                      & 16) The system save the answers of the student.                                                   \\ \hline
-		Alternative scenarios &                                                                                                   \\
+		Alternative scenarios
 		                      & A1: student leave then return: this scenario starts at any step after step 13 only once.          \\
 		                      & \hspace{4mm}13.1) The student leaves the app, or connection is lost with the student.             \\
 		                      & \hspace{4mm}13.2) The system will wait for 5 minutes for the student to connect to the system.    \\
 		                      & \hspace{4mm}13.3) The student connects to the system.                                             \\
 		                      & \hspace{4mm}13.4) The scenario continues from step 13 of scenario nominal.                        \\
-		                      &                                                                                                   \\
 		                      & A2: Exam didn't not started yet: this scenario starts after step 11 of scenario nominal.          \\
 		                      & \hspace{4mm}11.1) The system keeps the student in the waiting room until the exam is started.     \\
 		                      & \hspace{4mm}11.2) The scenario starts from step 12 of scenario nominal.                           \\ \hline
-		Exception scenarios   &                                                                                                   \\
-		                      & E1: The student is not allowed: this scenario starts after step 1 of scenario nominal.            \\
-		                      & \hspace{4mm}1.1) the system finds that student is not allowed to pass the exam.                   \\
-		                      & \hspace{4mm}1.2) the system tells the student that he is not allowed to pass the exam.            \\
-		                      & \hspace{4mm}1.3) the system cancels the operation.                                                \\
-		                      &                                                                                                   \\
-		                      & E2: False identity: this scenario start after step 9 of scenario nominal.                         \\
-		                      & \hspace{4mm}9.1) The system notifies the proctor to check for the identity.                       \\
-		                      & \hspace{4mm}9.2) The proctor confirms the false identity.                                         \\
-		                      & \hspace{4mm}9.3) the system notifies the admin with records attached.                             \\
-		                      & \hspace{4mm}9.4) The system excludes the student with notification of false identity.             \\
-		                      &                                                                                                   \\
-		                      & E3: The student encountered a problem: this scenario starts at any step after step 12 only once.  \\
-		                      & \hspace{4mm}12.1) The system waits for 5 minutes for the student to connect again.                \\
-		                      & \hspace{4mm}12.1) The system closes the session for the student and submits his work.             \\ \hline
-		Post conditions       &                                                                                                   \\
-		                      & The answers of the student is saved on the database.                                              \\
-		                      & The student marked as he finished exam.                                                           \\ \hline
 	\end{tabularx}
-	\caption{Descriptive sheet for the use case: pass an exam.}
+
 	\label{table:4}
 \end{table}
 \clearpage
+	\begin{table}
+		\centering
+		\begin{tabularx}{\textwidth}{|l|X|}
+			\hline
+			Exception scenarios
+			& E1: The student is not allowed: this scenario starts after step 1 of scenario nominal.            \\
+			& \hspace{4mm}1.1) the system finds that student is not allowed to pass the exam.                   \\
+			& \hspace{4mm}1.2) the system tells the student that he is not allowed to pass the exam.            \\
+			& \hspace{4mm}1.3) the system cancels the operation.                                                \\
+			& E2: False identity: this scenario start after step 9 of scenario nominal.                         \\
+			& \hspace{4mm}9.1) The system notifies the proctor to check for the identity.                       \\
+			& \hspace{4mm}9.2) The proctor confirms the false identity.                                         \\
+			& \hspace{4mm}9.3) the system notifies the admin with records attached.                             \\
+			& \hspace{4mm}9.4) The system excludes the student with notification of false identity.             \\
+			& E3: The student encountered a problem: this scenario starts at any step after step 12 only once.  \\
+			& \hspace{4mm}12.1) The system waits for 5 minutes for the student to connect again.                \\
+			& \hspace{4mm}12.1) The system closes the session for the student and submits his work.             \\ \hline
+			Post conditions
+			& The answers of the student is saved on the database.                                              \\
+			& The student marked as he finished exam.                                                           \\ \hline
+		\end{tabularx}
+		\caption{Descriptive sheet for the use case: pass an exam.}
+	\end{table}
 
-\subsubsection{system sequence diagram}
+
 \begin{figure}[]
-	
+	\subsubsection{system sequence diagram}
 	\centering
 	\includegraphics[width=0.6\textwidth]{images/pass_exam}
 	
@@ -462,9 +467,9 @@
 \end{figure}
 \clearpage
 
-\subsubsection{prototypes}
+
 \begin{figure}[h]
-	
+	\subsubsection{prototypes}
 	\centering
 	\includegraphics[width=\textwidth]{images/prototypes_pass_exam1}
 	\includegraphics[width=\textwidth]{images/prototypes_pass_exam2}
@@ -475,9 +480,10 @@
 
 
 
-\raggedright\subsection{Use Case: End exam session for a student}
-\subsubsection{Descriptive sheet}
+
 \begin{table}[h]
+	\raggedright\subsection{Use Case: End exam session for a student}
+	\subsubsection{Descriptive sheet}
 	\centering
 	\begin{tabularx}{\textwidth}{|l|X|}
 		\hline
@@ -485,12 +491,12 @@
 		Type                  & principal                                                                                                              \\ \hline
 		Actors                & proctor                                                                                                                \\ \hline
 		Objective             & end exam for a student who was proven that he was cheating                                                             \\ \hline
-		Preconditions         &                                                                                                                        \\
+		Preconditions
 		                      & - Proctor logged in.                                                                                                   \\
 		                      & - Student logged in.                                                                                                   \\
 		                      & - student on an exam.                                                                                                  \\
 		                      & - proctor started the exam.                                                                                            \\ \hline
-		nominal scenario      &                                                                                                                        \\
+		nominal scenario
 		                      & 1) proctor clicks “end exam for this student”.                                                                         \\
 		                      & 2) the system asks him to confirm his action.                                                                          \\
 		                      & 3) proctor to confirms.                                                                                                \\
@@ -500,26 +506,24 @@
 		                      & 7) the system stops the student from continuing the exam.                                                              \\
 		                      & 8) the system saves the record of the student and the report with the answers.                                         \\
 		                      & 9) the system marks the student as cheater.                                                                            \\ \hline
-		Alternative scenarios &                                                                                                                        \\
+		Alternative scenarios
 		                      & A1 : User chooses verification by SMS,  Sequence can start after the point 3 of the nominal scenario.                  \\
 		                      & \hspace{4mm}3.1) The user chooses verification by SMS.                                                                 \\
 		                      & \hspace{4mm}3.2) the System sends a verification code to the user's phone number.                                      \\
 		                      & \hspace{4mm}3.3) the System asks the user to enter his verification code.                                              \\
 		                      & \hspace{4mm}3.4) the user enters the code and clicks on "Confirm".                                                     \\
 		                      & \hspace{4mm}3.5) the system shows a success message and redirects the user to the home page.                           \\ \hline
-		Exception scenarios   &                                                                                                                        \\
+		Exception scenarios
 		                      & E1 : User enters a wrong email or password: Sequence can start after the point 2 of the nominal scenario.              \\
 		                      & \hspace{4mm}2.1) The system shows an error message "wrong email or password".                                          \\
 		                      & \hspace{4mm}2.2) The nominal scenario                                                                                  \\
-		                      &                                                                                                                        \\
 		                      & E2 : User enters a expired or invalid verification code: Sequence can start after the point 7 of the nominal scenario. \\
 		                      & \hspace{4mm}7.1) The system shows an error message "The verification code is expired or invalid".                      \\
 		                      & \hspace{4mm}7.2) The nominal scenario                                                                                  \\
-		                      &                                                                                                                        \\
 		                      & E3 : User enters a wrong password 5 times: Sequence can start after the point 2 of the nominal scenario.               \\
 		                      & \hspace{4mm}7.4) The system shows an error message "you entered too many wrong ng (forgot password)".                  \\
 		                      & \hspace{4mm}7.2) The nominal scenario                                                                                  \\ \hline
-		Post conditions       &                                                                                                                        \\
+		Post conditions
 		                      & a student is excluded and a rapport is sent to the head teacher.                                                       \\ \hline
 	\end{tabularx}
 	\caption{Descriptive sheet for the use case: end exam session for a student.}
@@ -527,9 +531,9 @@
 \end{table}
 \clearpage
 
-\subsubsection{system sequence diagram}
+
 \begin{figure}[h]
-	
+	\subsubsection{system sequence diagram}
 	\centering
 	\includegraphics[width=\textwidth]{images/End_exam_for_student}
 	
