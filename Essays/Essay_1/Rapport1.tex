@@ -57,10 +57,88 @@
     \tableofcontents
     \newpage
 
-     \raggedright\section{functionnal requirement}
+     \raggedright\section{Functionnal Requirement}
 
-    
-     \subsection{Actor: Teacher responsible of the module}
+    \subsection{Admin}
+    \begin{itemize}
+        \subsubsection{Authentication functional requirements:}
+        \begin{itemize}
+            \item Login.
+            \item reset password.
+        \end{itemize}
+
+        \subsubsection{User management functional requirements:}
+        \begin{itemize}
+
+            \subsubsection{Teacher management functional requirements:}
+            \begin{itemize}
+                \item Consult list of teachers.
+                \item add a teacher.
+                \item modify teacher.
+                \item delete a teacher.
+                \item consult a teacher.
+                \item affect modules to a teacher.
+            \end{itemize}
+
+            \subsubsection{Student management functional requirements.}
+            \begin{itemize}
+                \item consult list of students.
+                \item add a student.
+                \item modify a student.
+                \item delete a student.
+                \item consult a student.
+            \end{itemize}
+
+        \end{itemize}
+
+        \subsubsection{Module management functional requirements:}
+        \begin{itemize}
+            \item consult list of modules.
+            \item add a module.
+            \item modify a module.
+            \item delete a module.
+            \item consult a module.
+        \end{itemize}
+
+        \subsubsection{Exam management functional requirements:}
+        \begin{itemize}
+            \item Create an exam session.
+            \item modify an exam session.
+            \item Delete an exam session.
+            \subsubsection{Exam's proctors management:}
+            \begin{itemize}
+                \item Assign a proctor to an exam.
+                \item Consult list of proctors.
+                \item Modify proctor.
+                \item Dismiss a proctor from an exam.
+            \end{itemize}
+            \item Consult analytics of an exam.
+            \item Notify students.
+            \subsubsection{Absence justification management:}
+            \begin{itemize}
+                \item consult list of absence justifications.
+                \item consult an absence justification.
+                \item mark an absence justification as done.
+                \item replay to an absence justification.
+                \item modify replay.
+            \end{itemize}
+        \end{itemize}
+
+        \subsubsection{Report management functional requirements:}
+        \begin{itemize}
+            \item consult list of reports.
+            \item consult a report.
+            \item mark a report as done.
+            \item replay to a report.
+        \end{itemize}
+
+        \item Backup configuration and database.
+        \item Restore configuration and database.
+        \item Modify his own profile.
+    \end{itemize}
+
+
+    \subsection{Head Teacher}
      \begin{itemize}
         \subsubsection{Authentication functional requirements:}
         \begin{itemize}
@@ -120,7 +198,7 @@
     \end{itemize}
 
 
-     \subsection{Actor: Teacher responsible of the td/tp}
+     \subsection{Teacher TD/TP}
      \begin{itemize}
      \subsubsection{Authentication functional requirements:}
      \begin{itemize}
@@ -156,7 +234,7 @@
      \item Modify his own profile.
     \end{itemize}
 
-     \subsection{Actor: Student}
+     \subsection{Student}
      \begin{itemize}
      \subsubsection{Authentication functional requirements:}
      \begin{itemize}
@@ -202,85 +280,8 @@
      \item Modify his own profile
     \end{itemize}
 
-     \subsection{Actor: Admin}
-     \begin{itemize}
-     \subsubsection{Authentication functional requirements:}
-     \begin{itemize}
-         \item Login.
-         \item reset password.
-     \end{itemize}
 
-     \subsubsection{User management functional requirements:}
-     \begin{itemize}
-
-        \subsubsection{Teacher management functional requirements:}
-         \begin{itemize}
-             \item Consult list of teachers.
-             \item add a teacher.
-             \item modify teacher.
-             \item delete a teacher.
-             \item consult a teacher.
-             \item affect modules to a teacher.
-         \end{itemize}
-
-         \subsubsection{Student management functional requirements.}
-         \begin{itemize}
-             \item consult list of students.
-             \item add a student.
-             \item modify a student.
-             \item delete a student.
-             \item consult a student.
-         \end{itemize}
-
-     \end{itemize}
-
-     \subsubsection{Module management functional requirements:}
-     \begin{itemize}
-        \item consult list of modules.
-        \item add a module.
-        \item modify a module.
-        \item delete a module.
-        \item consult a module.
-     \end{itemize}
-
-     \subsubsection{Exam management functional requirements:}
-     \begin{itemize}
-        \item Create an exam session.
-        \item modify an exam session.
-        \item Delete an exam session.
-        \subsubsection{Exam's proctors management:}
-         \begin{itemize}
-            \item Assign a proctor to an exam.
-            \item Consult list of proctors.
-            \item Modify proctor.
-            \item Dismiss a proctor from an exam.
-         \end{itemize}
-         \item Consult analytics of an exam.
-         \item Notify students.
-         \subsubsection{Absence justification management:}
-         \begin{itemize}
-            \item consult list of absence justifications.
-            \item consult an absence justification.
-            \item mark an absence justification as done.
-            \item replay to an absence justification.
-            \item modify replay.
-         \end{itemize}
-     \end{itemize}
-
-     \subsubsection{Report management functional requirements:}
-     \begin{itemize}
-         \item consult list of reports.
-         \item consult a report.
-         \item mark a report as done.
-         \item replay to a report.
-     \end{itemize}
-
-     \item Backup configuration and database.
-     \item Restore configuration and database.
-     \item Modify his own profile.
-    \end{itemize}
-
-     \subsection{Actor: Proctor}
+     \subsection{Proctor}
      \begin{itemize}
      \subsubsection{Authentication functional requirements:}
      \begin{itemize}
