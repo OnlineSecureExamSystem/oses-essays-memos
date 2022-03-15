@@ -33,8 +33,9 @@
     \subsubsection{Problematic}
 
     \begin{itemize}
-        \item How to protect the system from most online attacks (injections, DDoS attacks, etc..).
+        \item How to make a secure examination system that includes Proctoring, Evaluation and exam construction
         \item How to prevent students from using any type of cheats.
+        \item How to protect the system from most online attacks (injections, DDoS attacks, etc..).
         \item How to make a strict examination system yet doesn't ruin the examinator experience.
         \item How to take advantage of artificial intelligent technics to boost the system’s efficiency and help the proctor.
         \item How to include automatic exam evaluation.
@@ -42,27 +43,19 @@
     \end{itemize}
 
 
-    \subsubsection{project limitations}
-
-    \begin{itemize}
-        \item The system won't manage and organize students and teachers because it's an examination system and not a school management system.
-        \item Each instance of the system is Linked to a single school or university, which means the system is only interested in examining students of that school, any examinee that doesn't study at that school can’t use the system.
-        \item The System won't be interested in examining Non-scholars.
-    \end{itemize}
-
 
     \subsection{Project objective}
 
     \begin{itemize}
         \item Make reliable and trustworthy system
-        \item Develop an online exams system for the university online official students examination
-        \item An anti-cheating examination system using a combination of AI and human proctoring
+        \item Develop an official online examination system for the university
+        \item An anti-cheating examination system using  AI and human proctoring
         \item Close the gap between presence exams and online exam
-        \item make auto-correction and automate managing exams reducing effort for teachers
+        \item Include auto-evaluation and automate the exam management to reduce the effort for teachers
         \item The system will respect and ensure the regulation of the examination in the university
-        \item A maintainable system that can easily adapt  with development of university examination system and regulations
+        \item A maintainable system that can easily adapt  to the development of the university examination system and regulations
         \item Protect website from known cyber attacks using known methods
-        \item Use a good and modern UI/UX techniques to make better experience for the users
+        \item Use a good and modern UI/UX to make a better experience
         \item Database and configuration will have a backup system
     \end{itemize}
 
@@ -89,20 +82,18 @@
     Proctor is a university teacher who is assigned to proctor the students at exams and to conduct exam-related activities such as ensuring the real students are present, starting the exam, and supervising it.
 
     \raggedright\section{Functionnal Requirement}
-
     \subsection{Admin}
-    \begin{itemize}
+    \begin{list}{$\circ$}{}
         \subsubsection{Authentication functional requirements:}
         \begin{itemize}
             \item Login.
-            \item reset password.
         \end{itemize}
 
         \subsubsection{User management functional requirements:}
-        \begin{itemize}
+        \begin{list}{$\circ$}{}
 
             \subsubsection{Teacher management functional requirements:}
-            \begin{itemize}
+            \begin{list}{$\circ$}{}
                 \item Consult list of teachers.
                 \item add a teacher.
                 \item modify teacher.
@@ -112,7 +103,7 @@
             \end{itemize}
 
             \subsubsection{Student management functional requirements.}
-            \begin{itemize}
+            \begin{list}{$\circ$}{}
                 \item consult list of students.
                 \item add a student.
                 \item modify a student.
@@ -137,16 +128,15 @@
             \item modify an exam session.
             \item Delete an exam session.
             \subsubsection{Exam's proctors management:}
-            \begin{itemize}
+            \begin{list}{$\circ$}{}
                 \item Assign a proctor to an exam.
                 \item Consult list of proctors.
                 \item Modify proctor.
                 \item Dismiss a proctor from an exam.
             \end{itemize}
             \item Consult analytics of an exam.
-            \item Notify students.
             \subsubsection{Absence justification management:}
-            \begin{itemize}
+            \begin{list}{$\circ$}{}
                 \item consult list of absence justifications.
                 \item consult an absence justification.
                 \item mark an absence justification as done.
@@ -166,164 +156,155 @@
         \item Backup configuration and database.
         \item Restore configuration and database.
         \item Modify his own profile.
-    \end{itemize}
+    \end{list}
 
 
     \subsection{Head Teacher}
-    \begin{itemize}
+    \begin{list}{$\circ$}{}
         \subsubsection{Authentication functional requirements:}
-        \begin{itemize}
+        \begin{list}{$\circ$}{}
             \item Login.
-            \item reset password.
-        \end{itemize}
+        \end{list}
 
-        \subsubsection{Modul management functional requirements:}
-        \begin{itemize}
-            \item Consult his own modules.
-        \end{itemize}
 
         \subsubsection{Question bank/module management functional requirements:}
-        \begin{itemize}
+        \begin{list}{$\circ$}{}
             \item Consult the bank of questions.
-        \end{itemize}
+        \end{list}
 
         \subsubsection{Question management functional requirements:}
-        \begin{itemize}
+        \begin{list}{$\circ$}{}
             \item Create a question.
             \item Modify a question.
             \item Delete a question.
             \item Consult a question.
-        \end{itemize}
+        \end{list}
 
         \subsubsection{Exam management functional requirements:}
-        \begin{itemize}
+        \begin{list}{$\circ$}{}
             \item Create an exam.
             \item Modify an exam.
             \item Delete an exam.
             \item Consult an exam.
             \item Try an exam.
             \item Confirm the evaluation of an exam's responses.
+            \item Add exam correction
             \item Consult exam analytics.
-            \item Assign an exam to an exam session.
-            \item Export an exam.
-        \end{itemize}
+        \end{list}
 
         \subsubsection{Response management functional requirements:}
-        \begin{itemize}
+        \begin{list}{$\circ$}{}
             \item Consult the list of response.
             \item Consult a response.
             \item Evaluate a response.
-        \end{itemize}
+        \end{list}
 
         \subsubsection{Claims management functional requirements:}
-        \begin{itemize}
+        \begin{list}{$\circ$}{}
             \item Consult the list of claims.
             \item Consult a claim.
             \item Mark claim as solved.
             \item Report student.
             \item Reply to a claim.
             \item Modify a reply.
-        \end{itemize}
+        \end{list}
 
         \item Modify his own profile.
-    \end{itemize}
+    \end{list}
 
 
     \subsection{Teacher TD/TP}
-    \begin{itemize}
+    \begin{list}{$\circ$}{}
         \subsubsection{Authentication functional requirements:}
-        \begin{itemize}
+        \begin{list}{$\circ$}{}
             \item Login.
-            \item reset password.
-        \end{itemize}
+        \end{list}
 
         \subsubsection{Question bank management functional requirements:}
-        \begin{itemize}
+        \begin{list}{$\circ$}{}
             \item Consult the bank of questions.
-        \end{itemize}
+        \end{list}
 
         \subsubsection{Question management functional requirements:}
-        \begin{itemize}
+        \begin{list}{$\circ$}{}
             \item Create a question.
             \item Modify a question.
             \item Delete a question.
             \item Consult a question.
-        \end{itemize}
+        \end{list}
 
         \subsubsection{Exam management functional requirements:}
-        \begin{itemize}
+        \begin{list}{$\circ$}{}
             \item Consult exam analytics.
-        \end{itemize}
+        \end{list}
 
         \subsubsection{Response management functional requirements:}
-        \begin{itemize}
+        \begin{list}{$\circ$}{}
             \item Consult list of responses.
             \item Consult a response.
             \item Evaluate a response.
-        \end{itemize}
+        \end{list}
 
         \item Modify his own profile.
-    \end{itemize}
+    \end{list}
 
     \subsection{Student}
-    \begin{itemize}
+    \begin{list}{$\circ$}{}
         \subsubsection{Authentication functional requirements:}
-        \begin{itemize}
+        \begin{list}{$\circ$}{}
             \item Login.
-            \item reset password.
-        \end{itemize}
+        \end{list}
 
         \subsubsection{Exams schedule management functional requirements:}
-        \begin{itemize}
+        \begin{list}{$\circ$}{}
             \item Consult list of exams.
             \item Consult an exam.
             \item Set a reminder for an exam.
-        \end{itemize}
+        \end{list}
 
         \subsubsection{Pass an exam functional requirements:}
-        \begin{itemize}
+        \begin{list}{$\circ$}{}
             \item Test requirements.
             \item Check in for exam.
             \subsubsection{Communicate with the proctor of an exam:}
-            \begin{itemize}
+            \begin{list}{$\circ$}{}
                 \item rise hand to talk to a proctor.
                 \item write a message to a proctor.
                 \item consult messages from a proctor.
-            \end{itemize}
+            \end{list}
 
             \item give feedback about an exam.
             \item leave an exam.
             \item consult results of exam.
-        \end{itemize}
+        \end{list}
 
         \subsubsection{Claims functional requirements:}
-        \begin{itemize}
+        \begin{list}{$\circ$}{}
             \item Claim an evaluation of a question.
             \item Consult a claim.
-        \end{itemize}
+        \end{list}
 
         \subsubsection{Absence functional requirements:}
-        \begin{itemize}
+        \begin{list}{$\circ$}{}
             \item Justify an absence.
             \item Consult a response.
-        \end{itemize}
+        \end{list}
 
         \item Modify his own profile
-    \end{itemize}
+    \end{list}
 
 
     \subsection{Proctor}
-    \begin{itemize}
+    \begin{list}{$\circ$}{}
         \subsubsection{Authentication functional requirements:}
-        \begin{itemize}
+        \begin{list}{$\circ$}{}
             \item Login.
-            \item reset password.
-        \end{itemize}
+        \end{list}
 
         \subsubsection{Exam session management functional requirements:}
-        \begin{itemize}
+        \begin{list}{$\circ$}{}
             \subsubsection{Control session:}
-            \begin{itemize}
+            \begin{list}{$\circ$}{}
                 \item start a session.
                 \item End exam session.
                 \item Enable exit exam for students.
@@ -331,29 +312,29 @@
                 \item Enable enter exam for student.
                 \item Disable enter exam for students.
                 \item Confirm presence list.
-            \end{itemize}
+            \end{list}
             \subsubsection{Communicate with student:}
-            \begin{itemize}
+            \begin{list}{$\circ$}{}
                 \item Speak to all students.
                 \item Speak to a student.
                 \item Message all students.
                 \item Message a student.
-            \end{itemize}
+            \end{list}
             \subsubsection{Session proctoring functional requirements:}
-            \begin{itemize}
+            \begin{list}{$\circ$}{}
                 \item Proctor students.
                 \item Pin a student
                 \subsubsection{Proctoring a student:}
-                \begin{itemize}
+                \begin{list}{$\circ$}{}
                     \item proctor a student.
                     \item write a comment about a student.
                     \item End session for a particular student.
-                \end{itemize}
-            \end{itemize}
+                \end{list}
+            \end{list}
             \item Consult exam analytics.
-        \end{itemize}
+        \end{list}
         \item Modify his own profile.
-    \end{itemize}
+    \end{list}
 
 
     \raggedright\section{Non Functional Requirements}
@@ -414,7 +395,7 @@
 
     \raggedright\subsection{System}
 
-    \raggedright\subsubsection{Security}
+    \raggedright\subsubsection{Security and Privacy}
     \begin{itemize}
         \item Role based access.
         \item 2 step verification (confirmation by email or SmS) for all user types (admin , teacher, proctor, student).
@@ -457,7 +438,7 @@
         \item The students can pass exams on any desktop platform (Windows, Linux, macOs).
     \end{itemize}
 
-    \raggedright\subsubsection{Privacy and Confidentiality}
+    \raggedright\subsubsection{Confidentiality}
     \begin{itemize}
         \item Student can only see his own marks not other students maks.
         \item The admin can’t see exams or questions.
@@ -554,21 +535,18 @@
             & 8) the system shows a success message.                                                                                                                               \\ \hline
             Alternative scenarios
             & A1 : User chooses verification by SMS,  Sequence can start after the point 3 of the nominal scenario.                                                                \\
-            & \hspace{4mm}3.1) The user chooses verification by SMS.                                                                                                               \\
-            & \hspace{4mm}3.2) the System sends a verification code to the user's phone number.                                                                                    \\
-            & \hspace{4mm}3.3) the System asks the user to enter his verification code.                                                                                            \\
-            & \hspace{4mm}3.4) the user enters the code and clicks on "Confirm".                                                                                                   \\
-            & \hspace{4mm}3.5) the system shows a success message and redirects the user to the home page.                                                                         \\ \hline
+            & \hspace{4mm}4) The user chooses verification by SMS.                                                                                                               \\
+            & \hspace{4mm}5) the System sends a verification code to the user's phone number.                                                                                    \\
+            & \hspace{4mm}6) the System asks the user to enter his verification code.                                                                                            \\
+            & \hspace{4mm}7) the user enters the code and clicks on "Confirm".                                                                                                   \\
+            & \hspace{4mm}8) the system shows a success message and redirects the user to the home page.                                                                         \\ \hline
             Exception scenarios
             & E1 : User enters a wrong email or password: Sequence can start after the point 2 of the nominal scenario.                                                            \\
-            & \hspace{4mm}2.1) The system shows an error message "wrong email or password".                                                                                        \\
-            & \hspace{4mm}2.2) The nominal scenario                                                                                                                                \\
+            & \hspace{4mm}3) The system shows an error message "wrong email or password".                                                                                        \\
             & E2 : User enters a expired or invalid verification code: Sequence can start after the point 7 of the nominal scenario.                                               \\
-            & \hspace{4mm}7.1) The system shows an error message "The verification code is expired or invalid".                                                                    \\
-            & \hspace{4mm}7.2) The nominal scenario                                                                                                                                \\
+            & \hspace{4mm}8) The system shows an error message "The verification code is expired or invalid".                                                                    \\
             & E3 : User enters a wrong password 5 times: Sequence can start after the point 2 of the nominal scenario.                                                             \\
-            & \hspace{4mm}7.4) The system shows an error message "you entered too many wrong passwords in a short time, please try again later or try clicking (forgot password)". \\
-            & \hspace{4mm}7.2) The nominal scenario                                                                                                                                \\ \hline
+            & \hspace{4mm}3) The system shows an error message "you entered too many wrong passwords in a short time, please try again later or try clicking (forgot password)". \\
             Post conditions
             & The user is authenticated and redirected to the Home page                                                                                                            \\ \hline
         \end{tabularx}
@@ -631,6 +609,7 @@
             Post conditions       &                                                                                                                                                                   \\
             & - students Notified about the date of the exam.                                                                                                                   \\
             & - head teacher of the course is notified of the created exam session.                                                                                             \\
+            & - proctor notified                                                                                           \\
             & - an exam session has been created.                                                                                                                               \\ \hline
         \end{tabularx}
         \caption{Descriptive sheet for the use case: create an exam session.}
@@ -827,6 +806,7 @@
             & - Proctor logged in.                                                                                                   \\
             & - Student logged in.                                                                                                   \\
             & - student on an exam.                                                                                                  \\
+            & - proctor a student                                                                                                 \\
             & - proctor started the exam.                                                                                            \\ \hline
             nominal scenario
             & 1) proctor clicks “end exam for this student”.                                                                         \\
@@ -839,22 +819,9 @@
             & 8) the system saves the record of the student and the report with the answers.                                         \\
             & 9) the system marks the student as cheater.                                                                            \\ \hline
             Alternative scenarios
-            & A1 : User chooses verification by SMS,  Sequence can start after the point 3 of the nominal scenario.                  \\
-            & \hspace{4mm}3.1) The user chooses verification by SMS.                                                                 \\
-            & \hspace{4mm}3.2) the System sends a verification code to the user's phone number.                                      \\
-            & \hspace{4mm}3.3) the System asks the user to enter his verification code.                                              \\
-            & \hspace{4mm}3.4) the user enters the code and clicks on "Confirm".                                                     \\
-            & \hspace{4mm}3.5) the system shows a success message and redirects the user to the home page.                           \\ \hline
+            \\ \hline
             Exception scenarios
-            & E1 : User enters a wrong email or password: Sequence can start after the point 2 of the nominal scenario.              \\
-            & \hspace{4mm}2.1) The system shows an error message "wrong email or password".                                          \\
-            & \hspace{4mm}2.2) The nominal scenario                                                                                  \\
-            & E2 : User enters a expired or invalid verification code: Sequence can start after the point 7 of the nominal scenario. \\
-            & \hspace{4mm}7.1) The system shows an error message "The verification code is expired or invalid".                      \\
-            & \hspace{4mm}7.2) The nominal scenario                                                                                  \\
-            & E3 : User enters a wrong password 5 times: Sequence can start after the point 2 of the nominal scenario.               \\
-            & \hspace{4mm}7.4) The system shows an error message "you entered too many wrong ng (forgot password)".                  \\
-            & \hspace{4mm}7.2) The nominal scenario                                                                                  \\ \hline
+            \\ \hline
             Post conditions
             & a student is excluded and a rapport is sent to the head teacher.                                                       \\ \hline
         \end{tabularx}
