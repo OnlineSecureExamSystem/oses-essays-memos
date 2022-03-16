@@ -1,13 +1,12 @@
 \documentclass[]{uc2pfecaneva}
 
-
 % Title Page
-\title{}
-\author{}
+\title{just a title}
+\author{dfdfs}
+
 
 
 \begin{document}
-	\setlength{\parskip}{6pts}
 
 	\tableofcontents
 	\listoffigures
@@ -16,17 +15,18 @@
 
 \newpage
 
-\raggedright\section{Introduction}
-\paragraph{}
+\section{Introduction}
+\justifying\paragraph{}
 	The analysis phase of the development process of any system is crucial, since any specifications in this part will heavily impact the system's behaviour, functionality, and interactions.
-\paragraph{}
+
+\justifying\paragraph{}
 	We will focus in this chapter on analysing the requirements for our system, as well as establishing its boundaries, starting with the project context, triggers, problematic, and objectives. The following step is identifying the actors of the system and their roles. Next, we will address the functional and nonfunctional requirements. Following that, we will specify the static context diagram and the use case diagram for each actor individually, then the global use case diagram. The final step will be to choose five use cases from which to develop their descriptive sheet, system sequence diagram, and prototypes for Human-Computer Interaction, along with a conclusion.
 
-\raggedright\section{Specifications (Cahier Des Charges)}
+\section{Specifications (Cahier Des Charges)}
 \subsection{Project context}
-\paragraph{}
+\justifying\paragraph{}
 	During the period of the CoVid-19 pandemic, On-Site examinations were not allowed for health reasons, this, combined with the fact that the nature of our education as software engineers demands us to use smart devices all the time, all these factors suggested and triggered the need of an online examination system.
-\paragraph{}
+\justifying\paragraph{}
 	In this system, students can take online exams instead of in-person exams, teachers create and proctor exams, and administrators manage all those things. At the same time, we ensure that the examinations are secure and in great measure as well.
 
 \subsection{Problematic and project limitations}
@@ -66,30 +66,30 @@
 \end{itemize}
 
 
-\raggedright\section{Identification of actors}
-\raggedright\subsection{Admin}
-\paragraph{}
+\section{Identification of actors}
+\subsection{Admin}
+\justifying\paragraph{}
 	The administrator is an employee of the university administration. He or she is responsible for all collective administrative tasks that need to be performed in the system.
 
-\raggedright\subsection{Head Teacher}
-\paragraph{}
+\subsection{Head Teacher}
+\justifying\paragraph{}
 	The head teacher is the main teacher of the module in the university, whose role is to create questions and exams, as well as to evaluate the students' answers.
 
-\raggedright\subsection{Teacher TD/TP}
-\paragraph{}
+\subsection{Teacher TD/TP}
+\justifying\paragraph{}
 	Teacher of TD (tutorials) / TP (practical work) is the person who is responsible for creating questions and evaluating student responses
 
 
-\raggedright\subsection{Student}
-\paragraph{}
+\subsection{Student}
+\justifying\paragraph{}
 	The student is the individual who enrolled at a university; it is he who passes exams and consults the results of a specific course on the system.
 
-\raggedright\subsection{Proctor}
-\paragraph{}
+\subsection{Proctor}
+\justifying\paragraph{}
 	Proctor is a university teacher who is assigned to proctor the students at exams and to conduct exam-related activities such as ensuring the real students are present, starting the exam, and supervising it.
 
-\raggedright\section{Non Functional Requirements}
-\raggedright\subsection{Admin}
+\section{Non Functional Requirements}
+\subsection{Admin}
 \begin{itemize}
 \item The admin cant see the exam questions.
 \item When assigning modules to teachers, the admin should choose the teacher’s type (responsible of module, Tp/Td).
@@ -100,7 +100,7 @@
 
 \end{itemize}
 
-\raggedright\subsection{Head Teacher}
+\subsection{Head Teacher}
 \begin{itemize}
 	\item Can only see modules that are assigned to him by admin.
 	\item The question bank is created automatically every new academic year.
@@ -113,14 +113,14 @@
 	\item Can’t search for students responses by their names.
 \end{itemize}
 
-\raggedright\subsection{Teacher TD/TP}
+\subsection{Teacher TD/TP}
 \begin{itemize}
 	\item Can’t create exams.
 	\item Can only consulate/modify/delete his own questions.
 	\item When he evaluates a student’s response it can be changed by the teacher responsible of module.
 \end{itemize}
 
-\raggedright\subsection{Student}
+\subsection{Student}
 \begin{itemize}
 	\item Can only see exams that are assigned to him by the admin.
 	\item Can either see a list view or a calendar view for his exams.
@@ -566,9 +566,9 @@
 
 
 \raggedright\section{Conclusion}
-\paragraph{}
+\justifying\paragraph{}
 	This chapter outlines the functional aspects of our system, including context, objectives, actors, requirements, use cases. Additionally, we chose five use cases, developed their descriptive sheet, system sequence diagram, and prototyped their interfaces.
-\paragraph{}
+\justifying\paragraph{}
 	By the end of the analysis step, We should have been able to gain a thorough understanding of how our system functions and the various functionalities that it could perform within its boundaries. This knowledge is essential to the next step, where we will define the system's static axis and define its structural aspect.
 
 

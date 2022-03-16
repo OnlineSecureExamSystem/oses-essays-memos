@@ -4,25 +4,32 @@
 \LoadClass[a4paper, 12pt]{report}
 
 \RequirePackage[includeheadfoot,margin=2.5cm]{geometry}
-\RequirePackage{fancyhdr}
+\usepackage{graphicx}
 \RequirePackage{fontspec}
+\usepackage{setspace}
 \RequirePackage{tabularx}
-\RequirePackage{setspace}
+\usepackage{ragged2e}
 \RequirePackage{titlesec}
-\RequirePackage{sectsty}
-\RequirePackage{svg}
-\RequirePackage{ragged2e}
+\usepackage[font=small,labelfont=bf]{caption}
 
-\onehalfspace
+\setlength{\parskip}{6pt}
+
+
+
+\titleformat{\section}
+{\fontsize{14pt}{0pt}\raggedright\bfseries}{\thesection}{6pt}{}[\vspace{12pt}]
+\titlespacing{\section}{0pt}{32pt}{6pt}
+
+\titleformat{\subsection}
+{\fontsize{14pt}{0pt}\bfseries}{\thesubsection}{6pt}{}
+\titlespacing{\subsection}{0pt}{12pt}{6pt}
+
+\titleformat{\caption}
+{\fontsize{3pt}{0pt}\bfseries}{\thesubsection}{0pt}{}
+
+
+
+
 
 \setmainfont{Times New Roman}
-
-\titleformat*{\section}{\fontsize{14pt}{12pt}\bfseries}
-\titlespacing*{\section}{0}{12pt}{2.5cm}
-\titleformat*{\subsection}{\fontsize{12pt}{6pt}\bfseries\raggedright}
-\titleformat*{\subsubsection}{\fontsize{10pt}{5pt}\bfseries\raggedright}
-\titleformat*{\paragraph}{
-	\justifying
-    \fontsize{20pt}
-    \bfseries
-    }
+\onehalfspace

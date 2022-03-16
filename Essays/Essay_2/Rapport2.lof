@@ -1,0 +1,12 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Global use-case diagram.\relax }}{12}{}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces system sequence diagram for the use case: login.\relax }}{15}{}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Prototypes for the use case: login.\relax }}{16}{}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces system sequence diagram for the use case: create an exam session.\relax }}{18}{}%
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Prototypes for the use case: create an exam session.\relax }}{19}{}%
+\contentsline {figure}{\numberline {1.6}{\ignorespaces system sequence diagram for the use case: create an exam.\relax }}{21}{}%
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Prototypes for the use case: create an exam.\relax }}{22}{}%
+\contentsline {figure}{\numberline {1.8}{\ignorespaces system sequence diagram for the use case: pass an exam.\relax }}{25}{}%
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Prototypes for the use case: pass an exam.\relax }}{26}{}%
+\contentsline {figure}{\numberline {1.10}{\ignorespaces system sequence diagram for the use case: end exam session for a student.\relax }}{28}{}%
+\contentsline {figure}{\numberline {1.11}{\ignorespaces Prototypes for the use case: end exam session for a student.\relax }}{29}{}%
