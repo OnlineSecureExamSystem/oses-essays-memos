@@ -124,9 +124,9 @@
 
         \subsubsection{Exam management functional requirements:}
         \begin{itemize}
-            \item Create an exam session.
-            \item modify an exam session.
-            \item Delete an exam session.
+            \item Planify an exam.
+            \item modify an exam plan.
+            \item Delete an exam plan.
             \subsubsection{Exam's proctors management:}
             \begin{list}{$\circ$}{}
                 \item Assign a proctor to an exam.
@@ -499,11 +499,9 @@
 
 
     \begin{figure}[ht]
-
         \subsection{Global use-case diagram}
-
         \centering
-        \includegraphics[width=\textwidth]{images/GUCD}
+        \includegraphics[width=300pt]{images/GUCD}
 
         \caption{Global use-case diagram.}
     \end{figure}
@@ -577,28 +575,26 @@
 
 
     \begin{table}[t]
-        \raggedright\subsection{Use Case: Create an exam session}
+        \raggedright\subsection{Use Case: Planify an exam session}
         \subsubsection{Descriptive sheet}
         \centering
         \begin{tabularx}{\textwidth}{|l|X|}
             \hline
-            Use case name         & Create an exam session                                                                                                                                            \\ \hline
+            Use case name         & Planify an exam session                                                                                                                                            \\ \hline
             Type                  & principal                                                                                                                                                         \\ \hline
             Actors                & admin                                                                                                                                                             \\ \hline
-            Objective             & create an exam session with time, students and proctors specifications.                                                                                           \\ \hline
+            Objective             & Planify an exam session with time, students and proctors specifications.                                                                                           \\ \hline
             Preconditions         &                                                                                                                                                                   \\
-            & - Admin logged in.                                                                                                                                                \\
-            & - consulted the list of modules.                                                                                                                                  \\
-            & - consulted a module.                                                                                                                                             \\ \hline
+            & - Admin logged in.                                                                                                                                                \\\hline
             nominal scenario      &                                                                                                                                                                   \\
-            & 1) The admin clicks on "create an exam session" button.                                                                                                           \\
+            & 1) The admin chooses a date from the calander.                                                                                                           \\
             & 2) The system shows a form to be filled by the admin.                                                                                                             \\
             & 3) The admin fills the form.                                                                                                                                      \\
             & 4) The system checks and examines the validation of the filled information.                                                                                       \\
             & 5) The admin clicks on save.                                                                                                                                      \\
-            & 6) The system saves the created exam session.                                                                                                                     \\
+            & 6) The system saves the created exam plan.                                                                                                                     \\
             & 7) The system notify the admin that the exam is created successfully.                                                                                             \\
-            & 8) The system notifies the module 's head teacher about the created exam session.                                                                                 \\
+            & 8) The system notifies the module's head teacher and the proctor about the planned exam session.                                                                                 \\
             & 9) Notify the students about the date of the exam session.                                                                                                        \\ \hline
             Alternative scenarios &                                                                                                                                                                   \\
             & A1: Incorrect fields: this scenario starts after step number 4 of scenario nominal.                                                                               \\
@@ -608,11 +604,11 @@
             Exception scenarios   &                                                                                                                                                                   \\ \hline
             Post conditions       &                                                                                                                                                                   \\
             & - students Notified about the date of the exam.                                                                                                                   \\
-            & - head teacher of the course is notified of the created exam session.                                                                                             \\
+            & - head teacher of the course is notified of the planned exam session.                                                                                             \\
             & - proctor notified                                                                                           \\
-            & - an exam session has been created.                                                                                                                               \\ \hline
+            & - an exam plan is created.                                                                                                                               \\ \hline
         \end{tabularx}
-        \caption{Descriptive sheet for the use case: create an exam session.}
+        \caption{Descriptive sheet for the use case: planify an exam session.}
         \label{table:2}
     \end{table}
     \clearpage
@@ -623,7 +619,7 @@
         \centering
         \includegraphics[width=\textwidth]{images/create_exam_session}
 
-        \caption{system sequence diagram for the use case: create an exam session.}
+        \caption{system sequence diagram for the use case: planify an exam session.}
     \end{figure}
     \clearpage
 
@@ -631,9 +627,9 @@
     \begin{figure}[h]
 
         \centering
-        \includegraphics[width=\textwidth]{images/prototypes_create_exam_session1}
+        \includegraphics[width=\textwidth]{images/prototypes_create_exam_session}
 
-        \caption{Prototypes for the use case: create an exam session.}
+        \caption{Prototypes for the use case: planify an exam session.}
     \end{figure}
     \clearpage
 
@@ -811,13 +807,12 @@
             nominal scenario
             & 1) proctor clicks “end exam for this student”.                                                                         \\
             & 2) the system asks him to confirm his action.                                                                          \\
-            & 3) proctor to confirms.                                                                                                \\
+            & 3) proctor confirms.                                                                                                \\
             & 4) the system shows to the proctor a report to fill.                                                                   \\
             & 5) proctor fill the report.                                                                                            \\
-            & 6) the proctor saves.                                                                                                  \\
+            & 6) the proctor confirms.                                                                                                  \\
             & 7) the system stops the student from continuing the exam.                                                              \\
-            & 8) the system saves the record of the student and the report with the answers.                                         \\
-            & 9) the system marks the student as cheater.                                                                            \\ \hline
+            & 8) the system saves the record of the student and the report with the answers.                                         \\ \hline
             Alternative scenarios
             \\ \hline
             Exception scenarios
