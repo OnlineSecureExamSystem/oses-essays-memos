@@ -251,6 +251,7 @@
     \end{itemize}
 
     \raggedright\section{Static context diagram}
+    Defines the actors that uses the system and the number of user of each type of actors
     \begin{figure}[h]
 
         \centering
@@ -262,9 +263,11 @@
     %5mm vertical space
     % when using images you just have to include the name of the image without the extension
 
-    \raggedright\section{Use-case diagrams}
+
     \begin{figure}
+        \raggedright\section{Use-case diagrams}
         \subsection{Admin use case diagram}
+        Defines the use cases that the admin user will be able to perform in the system
         \centering
         \includegraphics[width=\textwidth]{images/admin_UCD}
         \caption{admin use case diagram}
@@ -273,6 +276,7 @@
 
     \begin{figure}
         \subsection{Proctor use case diagram}
+        Defines the use cases that the proctor will be able to perform in the system
         \centering
         \includegraphics[width=\textwidth]{images/proctor_UCD}
         \caption{proctor use case diagram}
@@ -281,6 +285,7 @@
 
     \begin{figure}
         \subsection{Head teacher use case diagram}
+        Defines the use cases that the Head teacher user will be able to perform in the system
         \centering
         \includegraphics[width=450pt]{images/Module_Teacher}
         \caption{Head teacher use case diagram}
@@ -288,6 +293,7 @@
 
     \begin{figure}
         \subsection{Teacher Td/Tp use case diagram}
+        Defines the use cases that the Td/Tp teacher will be able to perform in the system
         \centering
         \includegraphics[width=\textwidth]{images/TP_TD_Teacher}
         \caption{Teacher Td/Tp use case diagram}
@@ -295,6 +301,7 @@
 
     \begin{figure}
         \subsection{Student use case diagram}
+        Defines the use cases that the student will be able to perform in the system
         \centering
         \includegraphics[width=350pt]{images/student_UCD}
         \caption{student use case diagram}
@@ -304,6 +311,8 @@
 
     \begin{figure}[ht]
         \subsection{Global use-case diagram}
+        Defines all the use cases of all the different types of actors that will be able to perform with the
+        system
         \centering
         \includegraphics[width=300pt]{images/GUCD}
 
@@ -317,6 +326,8 @@
         \raggedright\section{Specifications for 5 Use-cases}
 
         \raggedright\subsection{Use Case: Login}
+        describes the steps and actions the student will take and the system functioning as a response
+        to those actions to do the “login” use-case
         \subsubsection{Descriptive sheet}
         \centering
         \begin{tabularx}{\textwidth}{|l|X|}
@@ -359,7 +370,8 @@
 
     \subsubsection{system sequence diagram}
     \begin{figure}[h]
-
+        describes the steps and actions the student will take and the system functioning as a response
+        to those actions to do the “login” use-case
         \centering
         \includegraphics[width=260pt]{images/Login_dss}
 
@@ -380,6 +392,8 @@
 
     \begin{table}[t]
         \raggedright\subsection{Use Case: Planify an exam session}
+        describes the steps and actions the admin will take and the system functioning as a response to
+        those actions to do the “Planify an exam session” use-case.
         \subsubsection{Descriptive sheet}
         \centering
         \begin{tabularx}{\textwidth}{|l|X|}
@@ -419,7 +433,8 @@
 
     \subsubsection{system sequence diagram}
     \begin{figure}[h]
-
+        Describe the steps and actions the admin will perform with system and the system functioning
+        as a response to those actions to do the “Planify an exam session” use-case.
         \centering
         \includegraphics[width=\textwidth]{images/create_exam_session}
 
@@ -437,14 +452,9 @@
     \end{figure}
     \clearpage
 
-
-
-
-
-
-
-
-    \raggedright\subsection{Use Case: Create an exam}
+t\subsection{Use Case: Create an exam}
+    describes the steps and actions the student will take and the system functioning as a response
+    to those actions to do the “Create an exam” use-case
     \subsubsection{Descriptive sheet}
     \begin{table}[h]
         \centering
@@ -478,7 +488,8 @@
 
     \subsubsection{system sequence diagram}
     \begin{figure}[h]
-
+        describes the steps and actions the student will take and the system functioning as a response
+        to those actions to do the “Create an exam” use-case
         \centering
         \includegraphics[width=\textwidth]{images/Create_Exam}
 
@@ -501,6 +512,8 @@
 
     \begin{table}[h]
         \raggedright\subsection{Use Case: Pass an exam}
+        describes the steps and actions the student will take and the system functioning as a response
+        to those actions to do the “pass an exam” use-case
         \subsubsection{Descriptive sheet}
         \centering
         \begin{tabularx}{\textwidth}{|l|X|}
@@ -571,6 +584,8 @@
 
     \begin{figure}[]
         \subsubsection{system sequence diagram}
+        Describe the steps and actions the student will perform with system and the system functioning
+        as a response to those actions to do the “pass an exam” use-case.
         \centering
         \includegraphics[width=0.6\textwidth]{images/pass_exam}
 
@@ -594,6 +609,8 @@
     \thispagestyle{empty}
     \begin{table}[h]
         \raggedright\subsection{Use Case: End exam session for a student}
+        describes the steps and actions the proctor will take and the system functioning as a response
+        to those actions to do the “end exam session for student” use-case.
         \subsubsection{Descriptive sheet}
         \centering
         \begin{tabularx}{\textwidth}{|l|X|}
@@ -632,6 +649,8 @@
 
     \begin{figure}[h]
         \subsubsection{system sequence diagram}
+        Describe the steps and actions the proctor will perform with system and the system functioning
+        as a response to those actions to do the “end exam session for student”
         \centering
         \includegraphics[width=\textwidth]{images/End_exam_for_student}
 
@@ -650,17 +669,9 @@
     \clearpage
 
 
-
     \raggedright\section{Conclusion}
     \justifying\paragraph{}
     This chapter outlines the functional aspects of our system, including context, objectives, actors, requirements, use cases. Additionally, we chose five use cases, developed their descriptive sheet, system sequence diagram, and prototyped their interfaces.
     \justifying\paragraph{}
     By the end of the analysis step, We should have been able to gain a thorough understanding of how our system functions and the various functionalities that it could perform within its boundaries. This knowledge is essential to the next step, where we will define the system's static axis and define its structural aspect.
-
-
-
-
-
-
-
-\end{document}          
+\end{document}
