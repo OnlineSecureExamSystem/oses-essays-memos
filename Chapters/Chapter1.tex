@@ -1,4 +1,5 @@
 \documentclass[]{uc2pfecaneva}
+\usepackage{amssymb}
 
 
 % Title Page
@@ -141,66 +142,66 @@
 
 
     \raggedright\section{Non Functional Requirements}
-    \raggedright\subsection{Admin}
+
+    \raggedright\subsection{Security and Privacy}
+
     \begin{itemize}
-        \item The admin cant see the exam questions.
-        \item When assigning modules to teachers, the admin should choose the teacher’s type (responsible of module, Tp/Td).
-        \item When assigning proctors to an exam session, the admin should give the proctor his privileges (can start/end exam session, can kick student, etc...).
-        \item When adding a student or a teacher, the admin can generate a password for the user to be used for his first login.
-        \item The admin is the responsible of specifying the exam date.
-        \item Should save backups for the system’s database and configuration once in a while, to able to restore the system’s state when  unexpected problems acure .
+        \item\subsubsection{Role based access:}
+        \begin{itemize}
+            \item[$\bullet$]\textbf{Admin}
+            \begin{itemize}
+                \item[$\bullet$] The admin cant see the exam questions.
+                \item[$\bullet$] When assigning modules to teachers, the admin should choose the teacher’s type (responsible of module, Tp/Td).
+                \item[$\bullet$] When assigning proctors to an exam session, the admin should give the proctor his privileges (can start/end exam session, can kick student, etc...).
+                \item[$\bullet$] When adding a student or a teacher, the admin can generate a password for the user to be used for his first login.
+                \item[$\bullet$] The admin is the responsible of specifying the exam date.
+                \item[$\bullet$] Should save backups for the system’s database and configuration once in a while, to able to restore the system’s state when  unexpected problems acure .
+            \end{itemize}
 
-    \end{itemize}
+            \item[$\bullet$]\textbf{Head Teacher}
+            \begin{itemize}
+                \item[$\bullet$] Can only see modules that are assigned to him by admin.
+                \item[$\bullet$] The question bank is created automatically every new academic year.
+                \item[$\bullet$] Previous question banks are available.
+                \item[$\bullet$] Can’t create or delete any question bank.
+                \item[$\bullet$] Can only delete questions made by him.
+                \item[$\bullet$] When creating an exam, there is an option for an auto-evaluated exam, where he must provide answers for each question.
+                \item[$\bullet$] Can’t create an exam with no questions.
+                \item[$\bullet$] Can’t modify published exams.
+                \item[$\bullet$] Can’t search for students responses by their names.
+            \end{itemize}
 
-    \raggedright\subsection{Head Teacher}
-    \begin{itemize}
-        \item Can only see modules that are assigned to him by admin.
-        \item The question bank is created automatically every new academic year.
-        \item Previous question banks are available.
-        \item Can’t create or delete any question bank.
-        \item Can only delete questions made by him.
-        \item When creating an exam, there is an option for an auto-evaluated exam, where he must provide answers for each question.
-        \item Can’t create an exam with no questions.
-        \item Can’t modify published exams.
-        \item Can’t search for students responses by their names.
-    \end{itemize}
+            \item[$\bullet$]\textbf{Teacher TD/TP}
+            \begin{itemize}
+                \item[$\bullet$] Can’t create exams.
+                \item[$\bullet$] Can only consulate/modify/delete his own questions.
+                \item[$\bullet$] When he evaluates a student’s response it can be changed by the teacher responsible of module.
+            \end{itemize}
 
-    \raggedright\subsection{Teacher TD/TP}
-    \begin{itemize}
-        \item Can’t create exams.
-        \item Can only consulate/modify/delete his own questions.
-        \item When he evaluates a student’s response it can be changed by the teacher responsible of module.
-    \end{itemize}
+            \item[$\bullet$]\textbf{Student}
+            \begin{itemize}
+                \item[$\bullet$] Can only see exams that are assigned to him by the admin.
+                \item[$\bullet$] Can either see a list view or a calendar view for his exams.
+                \item[$\bullet$] The Student’s computer, operating system and internet  must satisfy the minimal requirements test for him to be allowed to take exams.
+                \item[$\bullet$] The  minimal requirements test is available any time.
+                \item[$\bullet$] The Student can communicate with the proctor.
+                \item[$\bullet$] The communication is limited.
+                \item[$\bullet$] Can leave the exam session only if the leaving option is activated by the proctor or the exam duration is finished.
+                \item[$\bullet$] Can give feedback about the exam.
+                \item[$\bullet$] Can see his exam mark and the mark for each question.
+                \item[$\bullet$] When consulting exam results, he can see the correct answers for his mistakes.
+            \end{itemize}
 
-    \raggedright\subsection{Student}
-    \begin{itemize}
-        \item Can only see exams that are assigned to him by the admin.
-        \item Can either see a list view or a calendar view for his exams.
-        \item The Student’s computer, operating system and internet  must satisfy the minimal requirements test for him to be allowed to take exams.
-        \item The  minimal requirements test is available any time.
-        \item The Student can communicate with the proctor.
-        \item The communication is limited.
-        \item Can leave the exam session only if the leaving option is activated by the proctor or the exam duration is finished.
-        \item Can give feedback about the exam.
-        \item Can see his exam mark and the mark for each question.
-        \item When consulting exam results, he can see the correct answers for his mistakes.
-    \end{itemize}
+            \item[$\bullet$]\textbf{Proctor}
+            \begin{itemize}
+                \item[$\bullet$] Can’t start an exam session if the number of students is less than the minimum number specified by the admin.
+                \item[$\bullet$] When a proctor leaves a comment an specific student, only proctors from the same room will be able to see it.
+                \item[$\bullet$] When writing a public message, it can be sent either to all students or all proctors.
+                \item[$\bullet$] Can only kick students from the room he is assigned to.
+                \item[$\bullet$] After kicking a student, a report to explain the reason of kicking is necessary.
+            \end{itemize}
 
-    \raggedright\subsection{Proctor}
-    \begin{itemize}
-        \item Can’t start an exam session if the number of students is less than the minimum number specified by the admin.
-        \item When a proctor leaves a comment an specific student, only proctors from the same room will be able to see it.
-        \item When writing a public message, it can be sent either to all students or all proctors.
-        \item Can only kick students from the room he is assigned to.
-        \item After kicking a student, a report to explain the reason of kicking is necessary.
-    \end{itemize}
-
-
-    \raggedright\subsection{System}
-
-    \raggedright\subsubsection{Security and Privacy}
-    \begin{itemize}
-        \item Role based access.
+        \end{itemize}
         \item 2 step verification (confirmation by email or SmS) for all user types (admin , teacher, proctor, student).
         \item Users must enter their password before changing their profile.
         \item The users can't use weak passwords.
@@ -213,20 +214,20 @@
         \item The desktop client server is completely separated from the main server for better security and to prevent both servers getting infected when one of them is hacked .
     \end{itemize}
 
-    \raggedright\subsubsection{Performance}
+    \raggedright\subsection{Performance}
     \begin{itemize}
         \item The system should be able to handle a large amount of student at the same time.
         \item The response time of the server is critical especially in exam sessions.
         \item The desktop client does not communicate to the main server, instead it communicates with its own server for better performance and short response time even when the main server is falling behind.
     \end{itemize}
 
-    \raggedright\subsubsection{Robustness and Reliability}
+    \raggedright\subsection{Robustness and Reliability}
     \begin{itemize}
         \item The admin can save backups of the system’s database and configuration any time, to able to restore the system’s state when  unexpected problems acure .
         \item Another reason to have two servers instead of one is to avoid getting the whole server down, so we insure that by separating it .
     \end{itemize}
 
-    \raggedright\subsubsection{Data integrity}
+    \raggedright\subsection{Data integrity}
     \begin{itemize}
         \item The system will save all conversations between students an proctors.
         \item The system will save all session webcam records.
@@ -235,13 +236,13 @@
         \item When students are taking an exam, the system will save their answers automatically every 30 seconds.
     \end{itemize}
 
-    \raggedright\subsubsection{Portability}
+    \raggedright\subsection{Portability}
     \begin{itemize}
         \item The main system is available through the browser so it can be accessed from any device.
         \item The students can pass exams on any desktop platform (Windows, Linux, macOs).
     \end{itemize}
 
-    \raggedright\subsubsection{Confidentiality}
+    \raggedright\subsection{Confidentiality}
     \begin{itemize}
         \item Student can only see his own marks not other students maks.
         \item The admin can’t see exams or questions.
