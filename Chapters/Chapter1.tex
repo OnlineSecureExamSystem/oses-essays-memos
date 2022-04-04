@@ -1,19 +1,13 @@
 \documentclass[]{uc2pfecaneva}
 \usepackage{amssymb}
-
-
-% Title Page
-\title{}
-\author{}
-
+\usepackage{sectsty}
 
 \begin{document}
     \setlength{\parskip}{6pts}
-
     \tableofcontents
     \listoffigures
     \listoftables
-    \chapter{Analysis}
+    \chapter{Analysis of needs}
 
     \newpage
 
@@ -23,7 +17,7 @@
     \justifying\paragraph{}
     We will focus in this chapter on analysing the requirements for our system, as well as establishing its boundaries, starting with the project context, triggers, problematic, and objectives. The following step is identifying the actors of the system and their roles. Next, we will address the functional and nonfunctional requirements. Following that, we will specify the static context diagram and the use case diagram for each actor individually, then the global use case diagram. The final step will be to choose five use cases from which to develop their descriptive sheet, system sequence diagram, and prototypes for Human-Computer Interaction, along with a conclusion.
 
-    \raggedright\section{Specifications (Cahier Des Charges)}
+    \raggedright\section{Specifications of needs}
     \subsection{Project context}
     \justifying\paragraph{}
     During the period of the CoVid-19 pandemic, On-Site examinations were not allowed for health reasons, this, combined with the fact that the nature of our education as software engineers demands us to use smart devices all the time, all these factors suggested and triggered the need of an online examination system.
@@ -60,30 +54,31 @@
         \item Database and configuration will have a backup system
     \end{itemize}
 
-    \raggedright\section{Identification of actors}
-    \raggedright\subsection{Admin}
+    \raggedright\section{Needs Statement}
+    \raggedright\subsection{Actors Identifation}
+    \raggedright\subsubsection{Admin}
     \justifying\paragraph{}
     The administrator is an employee of the university administration. He or she is responsible for all collective administrative tasks that need to be performed in the system.
 
-    \raggedright\subsection{Head Teacher}
+    \raggedright\subsubsection{Head Teacher}
     \justifying\paragraph{}
     The head teacher is the main teacher of the module in the university, whose role is to create questions and exams, as well as to evaluate the students' answers.
 
-    \raggedright\subsection{Teacher TD/TP}
+    \raggedright\subsubsection{Teacher TD/TP}
     \justifying\paragraph{}
     Teacher of TD (tutorials) / TP (practical work) is the person who is responsible for creating questions and evaluating student responses
 
 
-    \raggedright\subsection{Student}
+    \raggedright\subsubsection{Student}
     \justifying\paragraph{}
     The student is the individual who enrolled at a university; it is he who passes exams and consults the results of a specific course on the system.
 
-    \raggedright\subsection{Proctor}
+    \raggedright\subsubsection{Proctor}
     \justifying\paragraph{}
     Proctor is a university teacher who is assigned to proctor the students at exams and to conduct exam-related activities such as ensuring the real students are present, starting the exam, and supervising it.
 
-    \raggedright\section{Functionnal Requirement}
-    \subsection{Admin}
+    \raggedright\subsection{Functionnal Requirement}
+    \subsubsection{Admin}
     \begin{itemize}
         \item{\textbf{Authentication functional requirements:} Login}
         \item{\textbf{Teacher management functional requirements:}Consult list of teachers, Add a teacher, Modify a teacher, Delete a teacher, Consult a teacher, Affect modules to a teacher}
@@ -98,7 +93,7 @@
     \end{itemize}
 
 
-    \subsection{Head Teacher}
+    \subsubsection{Head Teacher}
     \begin{itemize}
         \item{\textbf{Authentication functional requirements:} Login}
         \item{\textbf{Question bank/module management functional requirements:}Consult the bank of questions}
@@ -110,7 +105,7 @@
     \end{itemize}
 
 
-    \subsection{Teacher TD/TP}
+    \subsubsection{Teacher TD/TP}
     \begin{itemize}
         \item{\textbf{Authentication functional requirements:} Login}
         \item{\textbf{Question bank/module management functional requirements:}Consult the bank of questions}
@@ -121,7 +116,7 @@
     \end{itemize}
 
 
-    \subsection{Student}
+    \subsubsection{Student}
     \begin{itemize}
         \item{\textbf{Authentication functional requirements:} Login}
         \item{\textbf{Exams management functional requirements:}Consult list of exams, Consult an exam, Set a reminder for an exam, Consult results of exam}
@@ -132,7 +127,7 @@
     \end{itemize}
 
 
-    \subsection{Proctor}
+    \subsubsection{Proctor}
     \begin{itemize}
         \item{\textbf{Authentication functional requirements:} Login}
         \item{\textbf{Exam session management functional requirements:}Start exam session, End exam session, Enable exit exam for students, Enable/Disable exit exam for students, Enable/Disable enter exam for student, Confirm presence list, Speak/Message all students, Speak/Message a student, Consult exam session analytics}
@@ -141,12 +136,12 @@
     \end{itemize}
 
 
-    \raggedright\section{Non Functional Requirements}
+    \raggedright\subsection{Non Functional Requirements}
 
-    \raggedright\subsection{Security and Privacy}
+    \raggedright\subsubsection{Security and Privacy}
 
     \begin{itemize}
-        \item\subsubsection{Role based access:}
+        \item\textbf{Role based access:}
         \begin{itemize}
             \item[$\bullet$]\textbf{Admin}
             \begin{itemize}
@@ -214,20 +209,20 @@
         \item The desktop client server is completely separated from the main server for better security and to prevent both servers getting infected when one of them is hacked .
     \end{itemize}
 
-    \raggedright\subsection{Performance}
+    \raggedright\subsubsection{Performance}
     \begin{itemize}
         \item The system should be able to handle a large amount of student at the same time.
         \item The response time of the server is critical especially in exam sessions.
         \item The desktop client does not communicate to the main server, instead it communicates with its own server for better performance and short response time even when the main server is falling behind.
     \end{itemize}
 
-    \raggedright\subsection{Robustness and Reliability}
+    \raggedright\subsubsection{Robustness and Reliability}
     \begin{itemize}
         \item The admin can save backups of the system’s database and configuration any time, to able to restore the system’s state when  unexpected problems acure .
         \item Another reason to have two servers instead of one is to avoid getting the whole server down, so we insure that by separating it .
     \end{itemize}
 
-    \raggedright\subsection{Data integrity}
+    \raggedright\subsubsection{Data integrity}
     \begin{itemize}
         \item The system will save all conversations between students an proctors.
         \item The system will save all session webcam records.
@@ -236,13 +231,13 @@
         \item When students are taking an exam, the system will save their answers automatically every 30 seconds.
     \end{itemize}
 
-    \raggedright\subsection{Portability}
+    \raggedright\subsubsection{Portability}
     \begin{itemize}
         \item The main system is available through the browser so it can be accessed from any device.
         \item The students can pass exams on any desktop platform (Windows, Linux, macOs).
     \end{itemize}
 
-    \raggedright\subsection{Confidentiality}
+    \raggedright\subsubsection{Confidentiality}
     \begin{itemize}
         \item Student can only see his own marks not other students maks.
         \item The admin can’t see exams or questions.
@@ -250,7 +245,8 @@
         \item All saved conversations and webcam records will be deleted automatically when a new semester starts.
     \end{itemize}
 
-    \raggedright\section{Static context diagram}
+    \raggedright\section{Expression of needs}
+    \raggedright\subsection{Static context diagram}
     Defines the actors that uses the system and the number of user of each type of actors
     \begin{figure}[h]
 
@@ -265,71 +261,62 @@
 
 
     \begin{figure}
-        \raggedright\section{Use-case diagrams}
-        \subsection{Admin use case diagram}
+        \raggedright\subsection{Use-case diagrams}
+        \subsubsection{Admin use case diagram}
         Defines the use cases that the admin user will be able to perform in the system
-        \centering
         \includegraphics[width=\textwidth]{images/admin_UCD}
         \caption{admin use case diagram}
     \end{figure}
     \clearpage
 
     \begin{figure}
-        \subsection{Proctor use case diagram}
-        Defines the use cases that the proctor will be able to perform in the system
-        \centering
+        \subsubsection{Proctor use case diagram}
+        \raggedright{Defines the use cases that the proctor will be able to perform in the system}
         \includegraphics[width=\textwidth]{images/proctor_UCD}
         \caption{proctor use case diagram}
     \end{figure}
 
 
     \begin{figure}
-        \subsection{Head teacher use case diagram}
-        Defines the use cases that the Head teacher user will be able to perform in the system
-        \centering
+        \subsubsection{Head teacher use case diagram}
+        \raggedright{Defines the use cases that the Head teacher user will be able to perform in the system}
         \includegraphics[width=450pt]{images/Module_Teacher}
         \caption{Head teacher use case diagram}
     \end{figure}
 
     \begin{figure}
-        \subsection{Teacher Td/Tp use case diagram}
-        Defines the use cases that the Td/Tp teacher will be able to perform in the system
-        \centering
+        \subsubsection{Teacher Td/Tp use case diagram}
+        \raggedright{Defines the use cases that the Td/Tp teacher will be able to perform in the system}
         \includegraphics[width=\textwidth]{images/TP_TD_Teacher}
         \caption{Teacher Td/Tp use case diagram}
     \end{figure}
 
     \begin{figure}
-        \subsection{Student use case diagram}
-        Defines the use cases that the student will be able to perform in the system
-        \centering
+        \subsubsection{Student use case diagram}
+        \raggedright{Defines the use cases that the student will be able to perform in the system}
         \includegraphics[width=350pt]{images/student_UCD}
         \caption{student use case diagram}
     \end{figure}
 
 
 
-    \begin{figure}[ht]
-        \subsection{Global use-case diagram}
-        Defines all the use cases of all the different types of actors that will be able to perform with the
-        system
+    \begin{figure}
+        \subsubsection{Global use-case diagram}
         \centering
-        \includegraphics[width=300pt]{images/GUCD}
-
+        Defines all the use cases of all actors that will be able to perform with the system
+        \includegraphics[width=250pt]{images/GUCD}
         \caption{Global use-case diagram.}
     \end{figure}
     \clearpage
 
 
     \thispagestyle{empty}
-    \begin{table}[h]
-        \raggedright\section{Specifications for 5 Use-cases}
+    \begin{table}
+        \raggedright\subsection{Specifications for 5 Use-cases}
 
-        \raggedright\subsection{Use Case: Login}
+        \raggedright\subsubsection{Use Case: Login}
         describes the steps and actions the student will take and the system functioning as a response
-        to those actions to do the “login” use-case
-        \subsubsection{Descriptive sheet}
-        \centering
+        to those actions to do the “login” use-case\linebreak \\
         \begin{tabularx}{\textwidth}{|l|X|}
             \hline
             Use case name         & login                                                                                                                                                                \\ \hline
@@ -368,34 +355,28 @@
     \end{table}
     \clearpage
 
-    \subsubsection{system sequence diagram}
+    \raggedright\textbf{system sequence diagram}\linebreak
+    \raggedright{the steps and actions the student will take and the system functioning as a response
+    to those actions to do the “login” use-case}
     \begin{figure}[h]
-        describes the steps and actions the student will take and the system functioning as a response
-        to those actions to do the “login” use-case
-        \centering
         \includegraphics[width=260pt]{images/Login_dss}
-
         \caption{system sequence diagram for the use case: login.}
     \end{figure}
     \clearpage
 
-    \subsubsection{prototypes}
+
     \begin{figure}[h]
-
-        \centering
+        \subsubsection{Prototypes}
         \includegraphics[width=\textwidth]{images/login1}
-
         \caption{Prototypes for the use case: login.}
     \end{figure}
     \clearpage
 
 
     \begin{table}[t]
-        \raggedright\subsection{Use Case: Planify an exam session}
+        \raggedright\subsubsection{Use Case: Planify an exam session}
         describes the steps and actions the admin will take and the system functioning as a response to
-        those actions to do the “Planify an exam session” use-case.
-        \subsubsection{Descriptive sheet}
-        \centering
+        those actions to do the “Planify an exam session” use-case.\linebreak \\
         \begin{tabularx}{\textwidth}{|l|X|}
             \hline
             Use case name         & Planify an exam session                                                                                                                                            \\ \hline
@@ -431,33 +412,30 @@
     \end{table}
     \clearpage
 
-    \subsubsection{system sequence diagram}
-    \begin{figure}[h]
-        Describe the steps and actions the admin will perform with system and the system functioning
-        as a response to those actions to do the “Planify an exam session” use-case.
-        \centering
+
+    \begin{figure}
+        \raggedright\textbf{System sequence diagram}\linebreak
+        \raggedright{Describe the steps and actions the admin will perform with system and the system functioning
+        as a response to those actions to do the “Planify an exam session” use-case.}
         \includegraphics[width=\textwidth]{images/create_exam_session}
 
         \caption{system sequence diagram for the use case: planify an exam session.}
     \end{figure}
     \clearpage
 
-    \subsubsection{prototypes}
-    \begin{figure}[h]
 
-        \centering
+    \begin{figure}
+        \subsubsection{Prototypes}
         \includegraphics[width=\textwidth]{images/prototypes_create_exam_session}
 
         \caption{Prototypes for the use case: planify an exam session.}
     \end{figure}
     \clearpage
 
-t\subsection{Use Case: Create an exam}
+\subsubsection{Use Case: Create an exam}
     describes the steps and actions the student will take and the system functioning as a response
     to those actions to do the “Create an exam” use-case
-    \subsubsection{Descriptive sheet}
     \begin{table}[h]
-        \centering
         \begin{tabularx}{\textwidth}{|l|X|}
             \hline
             Use case name         & Create an exam                                                                                              \\ \hline
@@ -486,36 +464,29 @@ t\subsection{Use Case: Create an exam}
     \end{table}
     \clearpage
 
-    \subsubsection{system sequence diagram}
-    \begin{figure}[h]
-        describes the steps and actions the student will take and the system functioning as a response
-        to those actions to do the “Create an exam” use-case
-        \centering
-        \includegraphics[width=\textwidth]{images/Create_Exam}
 
+    \begin{figure}
+        \raggedright\textbf{system sequence diagram}\linebreak
+        \raggedright{describes the steps and actions the student will take and the system functioning as a response
+        to those actions to do the “Create an exam” use-case}\linebreak
+        \includegraphics[width=\textwidth]{images/Create_Exam}
         \caption{system sequence diagram for the use case: create an exam.}
     \end{figure}
     \clearpage
 
-    \subsubsection{prototypes}
-    \begin{figure}[h]
 
-        \centering
+    \begin{figure}
+        \subsubsection{Prototypes}
         \includegraphics[width=\textwidth]{images/prototypes_create_exam}
 
         \caption{Prototypes for the use case: create an exam.}
     \end{figure}
     \clearpage
 
-
-
-
     \begin{table}[h]
-        \raggedright\subsection{Use Case: Pass an exam}
+        \raggedright\subsubsection{Use Case: Pass an exam}
         describes the steps and actions the student will take and the system functioning as a response
-        to those actions to do the “pass an exam” use-case
-        \subsubsection{Descriptive sheet}
-        \centering
+        to those actions to do the “pass an exam” use-case\linebreak \\
         \begin{tabularx}{\textwidth}{|l|X|}
             \hline
             Use case name         & Pass an exam                                                                           \\ \hline
@@ -553,12 +524,10 @@ t\subsection{Use Case: Create an exam}
             & \hspace{4mm}11.1) The system keeps the student in the waiting room until the exam is started.     \\
             & \hspace{4mm}11.2) The scenario starts from step 12 of scenario nominal.                           \\ \hline
         \end{tabularx}
-
         \label{table:4}
     \end{table}
     \clearpage
     \begin{table}
-        \centering
         \begin{tabularx}{\textwidth}{|l|X|}
             \hline
             Exception scenarios
@@ -582,11 +551,10 @@ t\subsection{Use Case: Create an exam}
     \end{table}
 
 
-    \begin{figure}[]
-        \subsubsection{system sequence diagram}
-        Describe the steps and actions the student will perform with system and the system functioning
-        as a response to those actions to do the “pass an exam” use-case.
-        \centering
+    \begin{figure}
+        \raggedright\textbf{System sequence diagram}\linebreak
+        \raggedright{Describe the steps and actions the student will perform with system and the system functioning
+        as a response to those actions to do the “pass an exam” use-case.}
         \includegraphics[width=0.6\textwidth]{images/pass_exam}
 
         \caption{system sequence diagram for the use case: pass an exam.}
@@ -594,25 +562,20 @@ t\subsection{Use Case: Create an exam}
     \clearpage
 
 
-    \begin{figure}[h]
-        \subsubsection{prototypes}
-        \centering
+    \begin{figure}
+        \subsubsection{Prototypes}
         \includegraphics[width=\textwidth]{images/prototypes_pass_exam1}
         \includegraphics[width=\textwidth]{images/prototypes_pass_exam2}
-
         \caption{Prototypes for the use case: pass an exam.}
     \end{figure}
     \clearpage
 
 
-
     \thispagestyle{empty}
     \begin{table}[h]
-        \raggedright\subsection{Use Case: End exam session for a student}
+        \raggedright\subsubsection{Use Case: End exam session for a student}
         describes the steps and actions the proctor will take and the system functioning as a response
-        to those actions to do the “end exam session for student” use-case.
-        \subsubsection{Descriptive sheet}
-        \centering
+        to those actions to do the “end exam session for student” use-case.\linebreak \\
         \begin{tabularx}{\textwidth}{|l|X|}
             \hline
             Use case name         & End exam session for a student                                                                                                \\ \hline
@@ -646,30 +609,22 @@ t\subsection{Use Case: Create an exam}
     \end{table}
     \clearpage
 
-
     \begin{figure}[h]
-        \subsubsection{system sequence diagram}
-        Describe the steps and actions the proctor will perform with system and the system functioning
-        as a response to those actions to do the “end exam session for student”
-        \centering
+        \raggedright\textbf{System sequence diagram}\linebreak
+        \raggedright{Describe the steps and actions the proctor will perform with system and the system functioning
+        as a response to those actions to do the “end exam session for student”}
         \includegraphics[width=\textwidth]{images/End_exam_for_student}
-
         \caption{system sequence diagram for the use case: end exam session for a student.}
     \end{figure}
     \clearpage
 
-    \subsubsection{prototypes}
     \begin{figure}[h]
-
-        \centering
+        \subsubsection{Prototypes}
         \includegraphics[width=\textwidth]{images/prototypes_end_exam_session}
-
         \caption{Prototypes for the use case: end exam session for a student.}
     \end{figure}
     \clearpage
-
-
-    \raggedright\section{Conclusion}
+    \raggedright\subsection{Conclusion}
     \justifying\paragraph{}
     This chapter outlines the functional aspects of our system, including context, objectives, actors, requirements, use cases. Additionally, we chose five use cases, developed their descriptive sheet, system sequence diagram, and prototyped their interfaces.
     \justifying\paragraph{}

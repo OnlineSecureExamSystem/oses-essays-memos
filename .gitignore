@@ -8,6 +8,9 @@
 *.synctex.gz
 *.log
 *.xdv
+*.lof
+*.lot
+*.toc
 out/
 auxil/
 .idea/
