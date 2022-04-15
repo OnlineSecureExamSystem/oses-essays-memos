@@ -1,9 +1,12 @@
 \documentclass[]{uc2pfecaneva}
-\usepackage{amssymb}
-\usepackage{sectsty}
+
+
+
+\includepdf[pages=-]{garde.pdf}
+
 
 \begin{document}
-    \setlength{\parskip}{6pts}
+    \setlength{\parskip}{6pt}
     \tableofcontents
     \listoffigures
     \listoftables
@@ -248,6 +251,7 @@
     \raggedright\section{Expression of needs}
     \raggedright\subsection{Static context diagram}
     Defines the actors that uses the system and the number of user of each type of actors
+    \linebreak
     \begin{figure}[h]
 
         \centering
@@ -264,6 +268,7 @@
         \raggedright\subsection{Use-case diagrams}
         \subsubsection{Admin use case diagram}
         Defines the use cases that the admin user will be able to perform in the system
+        \linebreak
         \includegraphics[width=\textwidth]{images/admin_UCD}
         \caption{admin use case diagram}
     \end{figure}
@@ -272,6 +277,7 @@
     \begin{figure}
         \subsubsection{Proctor use case diagram}
         \raggedright{Defines the use cases that the proctor will be able to perform in the system}
+        \linebreak
         \includegraphics[width=\textwidth]{images/proctor_UCD}
         \caption{proctor use case diagram}
     \end{figure}
@@ -280,6 +286,7 @@
     \begin{figure}
         \subsubsection{Head teacher use case diagram}
         \raggedright{Defines the use cases that the Head teacher user will be able to perform in the system}
+        \linebreak
         \includegraphics[width=450pt]{images/Module_Teacher}
         \caption{Head teacher use case diagram}
     \end{figure}
@@ -287,6 +294,7 @@
     \begin{figure}
         \subsubsection{Teacher Td/Tp use case diagram}
         \raggedright{Defines the use cases that the Td/Tp teacher will be able to perform in the system}
+        \linebreak
         \includegraphics[width=\textwidth]{images/TP_TD_Teacher}
         \caption{Teacher Td/Tp use case diagram}
     \end{figure}
@@ -294,6 +302,7 @@
     \begin{figure}
         \subsubsection{Student use case diagram}
         \raggedright{Defines the use cases that the student will be able to perform in the system}
+        \linebreak
         \includegraphics[width=350pt]{images/student_UCD}
         \caption{student use case diagram}
     \end{figure}
@@ -304,6 +313,7 @@
         \subsubsection{Global use-case diagram}
         \centering
         Defines all the use cases of all actors that will be able to perform with the system
+        \linebreak
         \includegraphics[width=250pt]{images/GUCD}
         \caption{Global use-case diagram.}
     \end{figure}
@@ -358,6 +368,7 @@
     \raggedright\textbf{system sequence diagram}\linebreak
     \raggedright{the steps and actions the student will take and the system functioning as a response
     to those actions to do the “login” use-case}
+    \linebreak
     \begin{figure}[h]
         \includegraphics[width=260pt]{images/Login_dss}
         \caption{system sequence diagram for the use case: login.}
@@ -367,6 +378,8 @@
 
     \begin{figure}[h]
         \subsubsection{Prototypes}
+        \raggedright Figure 1.9 illustrates a login use case diagram that satisfies the login purpose with 2 steps authentication, hence the 3 screens, the first screen is what users first see, here they enter their email and password, then they choose whether to receive the verification code via email or SMS, and finally the third screen appears for the user to enter the verification code.
+        \linebreak
         \includegraphics[width=\textwidth]{images/login1}
         \caption{Prototypes for the use case: login.}
     \end{figure}
@@ -417,6 +430,7 @@
         \raggedright\textbf{System sequence diagram}\linebreak
         \raggedright{Describe the steps and actions the admin will perform with system and the system functioning
         as a response to those actions to do the “Planify an exam session” use-case.}
+        \linebreak
         \includegraphics[width=\textwidth]{images/create_exam_session}
 
         \caption{system sequence diagram for the use case: planify an exam session.}
@@ -426,6 +440,8 @@
 
     \begin{figure}
         \subsubsection{Prototypes}
+        \raggedright The following figure demonstrates the five steps of scheduling an exam: the admin enters a title, type, date, duration, and an exam that has already been created by the Head teacher of the module; he then chooses the list of students who will pass this exam; After that, he chooses a list of proctors; and finally the admin saves and notifies the students about the exam session.
+        \linebreak
         \includegraphics[width=\textwidth]{images/prototypes_create_exam_session}
 
         \caption{Prototypes for the use case: planify an exam session.}
@@ -469,6 +485,7 @@
         \raggedright\textbf{system sequence diagram}\linebreak
         \raggedright{describes the steps and actions the student will take and the system functioning as a response
         to those actions to do the “Create an exam” use-case}\linebreak
+        \linebreak
         \includegraphics[width=\textwidth]{images/Create_Exam}
         \caption{system sequence diagram for the use case: create an exam.}
     \end{figure}
@@ -477,6 +494,8 @@
 
     \begin{figure}
         \subsubsection{Prototypes}
+        \raggedright The Head teacher follows three steps to create an exam. He enters the title, type, date, duration, and description of the exam, next he adds questions, and finally, he publishes or saves the exam ad draft.
+        \linebreak
         \includegraphics[width=\textwidth]{images/prototypes_create_exam}
 
         \caption{Prototypes for the use case: create an exam.}
@@ -555,6 +574,7 @@
         \raggedright\textbf{System sequence diagram}\linebreak
         \raggedright{Describe the steps and actions the student will perform with system and the system functioning
         as a response to those actions to do the “pass an exam” use-case.}
+        \linebreak
         \includegraphics[width=0.6\textwidth]{images/pass_exam}
 
         \caption{system sequence diagram for the use case: pass an exam.}
@@ -564,6 +584,8 @@
 
     \begin{figure}
         \subsubsection{Prototypes}
+        \raggedright As one of the most common use cases, passing an exam is the largest in terms of steps, with two major sections, the first is on the website where students consult the exam page and download the desktop app, then after downloading the app, the student must authenticate, then follow a few steps to check in including equipment and identity verification. Finally, the student waits for the exam to start and passes the exam. The figure below illustrates these steps.
+        \linebreak
         \includegraphics[width=\textwidth]{images/prototypes_pass_exam1}
         \includegraphics[width=\textwidth]{images/prototypes_pass_exam2}
         \caption{Prototypes for the use case: pass an exam.}
@@ -613,6 +635,7 @@
         \raggedright\textbf{System sequence diagram}\linebreak
         \raggedright{Describe the steps and actions the proctor will perform with system and the system functioning
         as a response to those actions to do the “end exam session for student”}
+        \linebreak
         \includegraphics[width=\textwidth]{images/End_exam_for_student}
         \caption{system sequence diagram for the use case: end exam session for a student.}
     \end{figure}
@@ -620,6 +643,8 @@
 
     \begin{figure}[h]
         \subsubsection{Prototypes}
+        \raggedright Proctors can end the exam for a student by navigating to the student proctoring screen, selecting the option to end the exam for a student, and writing a report confirming their choice. Figure 1.17 shows these steps.
+        \linebreak
         \includegraphics[width=\textwidth]{images/prototypes_end_exam_session}
         \caption{Prototypes for the use case: end exam session for a student.}
     \end{figure}

@@ -4,16 +4,18 @@
 \LoadClass[a4paper, 12pt]{report}
 
 \RequirePackage[includeheadfoot,margin=2.5cm]{geometry}
-\usepackage{graphicx}
+\RequirePackage{graphicx}
 \RequirePackage{fontspec}
-\usepackage{setspace}
+\RequirePackage{setspace}
 \RequirePackage{tabularx}
-\usepackage{ragged2e}
+\RequirePackage{ragged2e}
 \RequirePackage{titlesec}
-\usepackage[font=small,labelfont=bf]{caption}
+\RequirePackage[font=small,labelfont=bf]{caption}
+\RequirePackage{amssymb}
+\RequirePackage{sectsty}
+\RequirePackage{pdfpages}
 
 \setlength{\parskip}{6pt}
-
 
 
 \titleformat{\section}
