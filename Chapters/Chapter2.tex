@@ -1,6 +1,6 @@
 \documentclass[]{uc2pfecaneva}
 
-
+\includepdf[pages=-]{garde.pdf}
 \begin{document}
     \setlength{\parskip}{6pt}
     \tableofcontents
@@ -11,30 +11,63 @@
 
     \raggedright\section{Introduction}
     \raggedright\section{Domain Model}
-    \subsection{Entities}
-    \textbf{User :} the super class for all users, contains fields and methods that every user should have.\linebreak
-    \textbf{Admin :} the admin user entity, contains admin-specific fields and methods.\linebreak
-    \textbf{Teacher :} the super class for all teacher types : Headteacher, TpTdTeacher and Proctor.\linebreak
-    \textbf{Headteacher :} the Headteacher user entity.\linebreak
-    \textbf{TpTdTeacher :} the TpTdTeacher user entity.\linebreak
-    \textbf{Proctor :} the Proctor user entity.\linebreak
-    \textbf{Student :} the Student user entity.\linebreak
-    \textbf{Exam :} the Exam entity, contains a question list and more.\linebreak
-    \textbf{ExamPlanning :} the ExamPlanning entity, contains fields about the starting date of the exam and more.\linebreak
-    \textbf{Question :} contains the content of the question.\linebreak
-    \textbf{QuestionBank :} contains the question list created the teachers.\linebreak
-    \textbf{Module :} the module entity, contains module-specific fields.\linebreak
-    \textbf{Report :} contains the report information when a teacher reports a student.\linebreak
-    \textbf{Claim :} contains the claim information when a student submits a claim about an evaluation.\linebreak
-    \textbf{Response :} the student response of a question.\linebreak
-    \textbf{Evaluation :} the response evaluation of a question.\linebreak
-    \textbf{Comment :} a comment of a proctor on a student in an exam session\linebreak
-    \textbf{Message :} a message between a proctor and a student in an exam session.\linebreak
-    \textbf{Absence :} the absence state and information of a student for an exam session.\linebreak
-    \textbf{Reminder :} contains a notification content for any user.\linebreak
-    \textbf{Answer :} contains the exam answer of an exam, made by the teacher.\linebreak
-    \textbf{Feedback :} the student feedback and impression after an exam session.
 
+    \begin{table}
+        \raggedright\subsection{Entities}
+        A list of all entities and brief description for each one specifying the role of that entity\linebreak \\
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            Entity          & Description                                                                                                                                                                \\ \hline
+            \textbf{User :} & the super class for all users, contains fields and methods that every user should have.\\ \hline
+            \textbf{Admin :} & the admin user entity, contains admin-specific fields and methods.\\ \hline
+            \textbf{Teacher :} & the class that contains all teacher types : Headteacher, TpTdTeacher and Proctor.\\ \hline
+            \textbf{AssociateTeachers :} & Contains associate teachers for a specific module.\\ \hline
+            \textbf{Notification :} & Notification class for all user types.\\ \hline
+            \textbf{Student :} & the Student user entity.\\ \hline
+            \textbf{AcademicYear :} & the Academic Year entity, contains fields and methods for the Academic Year.\\ \hline
+            \textbf{Department :} & the Department entity, contains fields and methods for the Department.\\ \hline
+            \textbf{Exam :} & the Exam entity, contains a question list and more.\\ \hline
+            \textbf{Answer :} & the exam answer added by the head teacher.\\ \hline
+            \textbf{ExamPlanning :} & the ExamPlanning entity, contains fields about the starting date of the exam and more.\\ \hline
+            \textbf{Log :} & contains exam session logs, to know the exact time each student enters or leaves the session.\\ \hline
+            \textbf{Blocked :} & holds the students list of kicked users so they cant join the exam session.\\ \hline
+            \textbf{Question :} & contains the content of the question.\\ \hline
+            \textbf{QuestionBank :} & contains the question list created the teachers.\\ \hline
+            \textbf{Module :} & the module entity, contains module-specific fields.\\ \hline
+            \textbf{Report :} & Super class for all report types.\\ \hline
+            \textbf{CheatingReport :} & This class class holds the information about report written by the procter when he kicks a student out of an exam session because of cheating.\\ \hline
+            \textbf{BehaviorReport :} & This class class holds the information about report written by the head teacher about a students inappropriate answer\\ \hline
+            \textbf{Claim :} & contains the claim information when a student submits a claim about an evaluation.\\ \hline
+            \textbf{ClaimResponse :} & Holds the teacher's response to a student's claim.\\ \hline
+            \textbf{Group :} & Holds the name and information about a group of student assigned to an exam session.\\ \hline
+            \textbf{GroupMembers :} & Holds the students list of each group.\\ \hline
+            \textbf{Proctoring :} & Holds the proctors list assigned to an exam session.\\ \hline
+            \textbf{Message :} & Holds the content of a message between a proctor and the exam session students.\\ \hline
+        \end{tabularx}
+        \label{table:1}
+    \end{table}
+
+    \clearpage
+
+    \begin{table}[t]
+        \begin{tabularx}{\textwidth}{|l|X|}
+            \hline
+            \textbf{Response :} & the student response of a question.\\ \hline
+            \textbf{Evaluation :} & the response evaluation of a question.\\ \hline
+            \textbf{Comment :} & a comment of a proctor on a student in an exam session\\ \hline
+            \textbf{Message :} & a message between a proctor and a student in an exam session.\\ \hline
+            \textbf{Presence :} & the presence state and information of a student for an exam session.\\ \hline
+            \textbf{Answer :} & contains the exam answer of an exam, made by the teacher.\\ \hline
+            \textbf{Feedback :} & the student feedback and impression after an exam session.\\ \hline
+            \textbf{QuestionType :} & enumeration entity that holds all question types.\\ \hline
+            \textbf{ExamType :} & enumeration entity that holds all exam types.\\ \hline
+            \textbf{Color :} & enumeration entity that holds colors used to display exams on a calendar.\\ \hline
+            \textbf{Statue :} & enumeration entity that holds states that a claim or report can have (Open, Closed,...).\\ \hline
+            \\ \hline
+        \end{tabularx}
+        \caption{Entities Description}
+        \label{table:1}
+    \end{table}
 
     \begin{figure}
         \subsection{Domain class diagram}
@@ -49,7 +82,7 @@
         \subsection{Conception class diagram}
         \raggedright Defines the conceptual classes with details, specifying the fields and methods of each class.
         \linebreak
-        \includegraphics[width=350pt]{images/CCD}
+        \includegraphics[width=\textwidth]{images/CCD}
         \caption{Conception class diagram}
     \end{figure}
     \clearpage
