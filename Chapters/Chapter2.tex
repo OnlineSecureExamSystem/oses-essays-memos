@@ -4,15 +4,16 @@
 \begin{document}
     \setlength{\parskip}{6pt}
     \tableofcontents
-    \listoffigures
-    \listoftables
+    \setcounter{chapter}{1}
     \chapter{Conception}
     \newpage
 
     \raggedright\section{Introduction}
-    \raggedright\section{Domain Model}
+    \clearpage
+
 
     \begin{table}
+        \raggedright\section{Domain Model}
         \raggedright\subsection{Entities}
         A list of all entities and brief description for each one specifying the role of that entity\linebreak \\
         \begin{tabularx}{\textwidth}{|l|X|}
@@ -63,7 +64,6 @@
             \textbf{ExamType :} & enumeration entity that holds all exam types.\\ \hline
             \textbf{Color :} & enumeration entity that holds colors used to display exams on a calendar.\\ \hline
             \textbf{Statue :} & enumeration entity that holds states that a claim or report can have (Open, Closed,...).\\ \hline
-            \\ \hline
         \end{tabularx}
         \caption{Entities Description}
         \label{table:1}
@@ -87,7 +87,15 @@
     \end{figure}
     \clearpage
 
-    \raggedright\section{Migration to a database}
+    \begin{figure}
+        \raggedright\section{Migration to database}
+
+        \raggedright Shows the database tables and their relations and attributes.
+        \linebreak
+        \includegraphics[width=\textwidth]{images/DbSchema}
+        \caption{Database schema diagram}
+    \end{figure}
+    \clearpage
     \raggedright\section{Conclusion}
 
 
