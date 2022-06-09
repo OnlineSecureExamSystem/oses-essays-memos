@@ -1,4 +1,4 @@
-\documentclass[]{uc2pfecaneva}
+  \documentclass[]{uc2pfecaneva}
 
 \includepdf[pages=-]{garde.pdf}
 \begin{document}
@@ -8,17 +8,17 @@
     \chapter{Conception}
     \newpage
 
+
     \raggedright\section{Introduction}
     In the development process the conception phase is an essential part since it provides a representation of the structure of the system in a static way (domain model).
     The purpose of this chapter is to examine the conceptual part of our system, We first define the entities in the system, based on that, we construct the domain class diagram where we define the relationships between entities, where we describe the attributes, the operations and their visibility for each entity, and finally we conclude with a conclusion.
 
+    \raggedright\section{Domain Model}
+    The domain model is a visual representation of real world entities and the relationships between them, which collectively describe the problem domain space, It's used to clarify important domain-specific terms and to identify the entity classes.
+    \raggedright\subsection{Entities}
+    A list of all entities and brief description for each one specifying the role of that entity\linebreak \\
+    \begin{table}[h]
 
-
-    \begin{table}
-        \raggedright\section{Domain Model}
-        The domain model is a visual representation of real world entities and the relationships between them, which collectively describe the problem domain space, It's used to clarify important domain-specific terms and to identify the entity classes.
-        \raggedright\subsection{Entities}
-        A list of all entities and brief description for each one specifying the role of that entity\linebreak \\
 
         \begin{tabularx}{\textwidth}{|l|X|}
             \hline
@@ -38,7 +38,8 @@
             \textbf{Feedback :} & the student feedback and impression after an exam session.\\ \hline
             \textbf{Group :} & Holds the name and information about a group of student assigned to an exam session.\\ \hline
             \textbf{GroupMembers :} & Holds the students list of each group.\\ \hline
-            \textbf{Answer :} & the student answer of a question.\\ \hline
+            \textbf{Answer :} & Mother class of both StudentAnswer and the Correction made by the teacher.\\ \hline
+            \textbf{StudentAnswer :} & the student answer to a question.\\ \hline
             \textbf{AnswerType :} & enumeration entity that holds all answer types.\\ \hline
             \textbf{Evaluation :} & the response evaluation of a question.\\ \hline
             \textbf{Correction :} & the exam correction added by the head teacher.\\ \hline
@@ -90,16 +91,44 @@
     \end{figure}
     \clearpage
 
-    \begin{figure}
-        \raggedright\section{Migration to database}
 
-        \raggedright Shows the database tables and their relations and attributes.
-        \linebreak
+    \raggedright\section{Database}
+    NoSQL, also referred to as “not only SQL”, “non-SQL”, is an approach to database design that enables the storage and querying of data outside the traditional structures found in relational databases.\linebreak
+    \linebreak
+    NoSQL databases invariably incorporate a flexible schema model and are designed to scale horizontally across many servers, which makes them appealing for large data volumes or application loads that exceed the capacity of a single server.
+    The popularity of NoSQL has been driven by the following reasons:
+
+    \begin{itemize}
+        \item The pace of development with NoSQL databases can be much faster than with a SQL database.
+        \item The structure of many different forms of data is more easily handled and evolved with a NoSQL database.
+        \item The amount of data in many applications cannot be served affordably by a SQL database.
+        \item The scale of traffic and need for zero downtime cannot be handled by SQL.
+        \item New application paradigms can be more easily supported.
+    \end{itemize}
+    \linebreak
+    Here are the four main types of NoSQL databases: \textbf{Key-Value Stores, Column-Oriented Databases, Graph Databases, Document Databases.}
+
+
+    \subsubsection{MangoDB:}
+    MongoDB is a document database. In our development for the OSES system, we had to choose a database that will be flexible for potential scalability. \linebreak
+    The reason for that is because we want our system to be able to constantly change to serve the needs of our customers.
+
+    So we used the nosql databases, which was designed for this purpose in the first place,
+    And which stand for not only sql,
+    \clearpage
+
+
+    \subsection{Database schema:}
+    \raggedright Shows the database tables and their relations and attributes.
+    \begin{figure}[h]
         \includegraphics[width=\textwidth]{images/DbSchema}
         \caption{Database schema diagram}
     \end{figure}
-    \clearpage
+
     \raggedright\section{Conclusion}
+    Throughout this chapter we walked through the conceptual aspects of our system, starting with the domain model in which entities are defined, followed by the domain class diagram; based on the domain class diagram we outlined what entities, attributes and methods make up our system.
+    The first part of this chapter described how we envisioned our system and constructed its static aspect, but it was incomplete without speaking about how we implemented it to the physical level: the database, which is what the last part discusses, from transformation rules to the actual database diagram.
+    In the next chapter and using the previous chapters as a foundation, we will cover the implementation part of our system, the technological choices, and the final results.
 
 
 \end{document}
