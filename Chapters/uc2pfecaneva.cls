@@ -12,8 +12,12 @@
 \RequirePackage{titlesec}
 \RequirePackage[font=small,labelfont=bf]{caption}
 \RequirePackage{amssymb}
+\RequirePackage{wrapfig}
+\RequirePackage{ragged2e}
 \RequirePackage{sectsty}
 \RequirePackage{pdfpages}
+\RequirePackage{fancyhdr}
+
 
 \setlength{\parskip}{6pt}
 
